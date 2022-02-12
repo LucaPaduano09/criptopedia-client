@@ -1,0 +1,33 @@
+.admin-login-container{
+    margin-top: 200px;
+}
+.admin-login-container >h1{
+    font-weight: 300;
+    color: white;
+}
+
+.admin-login-form{
+    position: relative;
+    height: 30vh;
+    width: 30vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(228, 227, 227, 0.938);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.admin-login-form > label{
+    position: relative;
+    font-size: 34px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.admin-login-form > input{
+    position: relative;
+    width: 80%;
+    height: 4vh;
+    margin-bottom: 10px;
+    text-align: center;
+}

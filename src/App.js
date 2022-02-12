@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import Guru from "./components/Homepage/Guru";
 import CryptoPage from "./components/Crypto/CryptoPage";
 import SingleCrypto from "./components/Crypto/SingleCrypto";
+import Admin from "./components/admin/Admin";
 
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 function App() {
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path={"/guida"}>
             <Guida />
+          </Route>
+          <Route path={"/admin"}>
+            <Admin />
           </Route>
           <Route path={"/"}>
             <Home />

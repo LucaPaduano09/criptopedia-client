@@ -3,20 +3,29 @@ import { Link } from "react-router-dom";
 import "../../styles/CryptoPage.css";
 
 const CryptoPage = (props) => (
-  <Link to={`/monete/` + props.url}>
-    <div className="cryptopage-container">
+  <div className="cryptopage-container">
+      <Link to={`/monete/` + props.url}>
       <div className="inner-wrapper">
-         <div className="cryptopage-description">
+        <div className="cryptopage-description">
           <img
             src={props.moneta.moneta_image}
             alt={props.moneta.nome_moneta}
             style={{ position: "relative", height: "100px", width: "100px" }}
           />
-          <h2>{props.moneta.nome_moneta}</h2>
-        </div> 
+          <div className="cryptopage-info">
+            <h2 className="cryptopage-token-name">
+              {props.moneta.nome_moneta}
+            </h2>
+            <div className="cryptopage-token-categories">
+              <p className="cryptopage-token-category">{props.moneta.categories[0]}</p>
+              <p className="cryptopage-token-category">{props.moneta.categories[1]}</p>
+              <p className="cryptopage-token-category">{props.moneta.categories[2]}</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   </Link>
+    </div>
 );
 
 export default function ProductList() {
@@ -64,5 +73,12 @@ export default function ProductList() {
       );
     });
   }
-  return <div className="monete-container">{MoneteList()}</div>;
+  return (
+    <div className="monete-container">
+      <h2 className="monete-titolo">
+        In questa sezione troverai tutte le crypto listate da Criptopedia
+      </h2>
+      {MoneteList()}
+    </div>
+  );
 }
