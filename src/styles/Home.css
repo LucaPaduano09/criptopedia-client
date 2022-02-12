@@ -1,0 +1,165 @@
+.home-container{
+    height: 80vh;
+    background-color: rgb(10, 21, 31);
+    padding-top: 200px;
+    display: flex;
+    overflow: none;
+}
+
+.home-first{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.home-title{
+    color: white;
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+}
+.home-title1{
+    color: white;
+    font-size: 4.3vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+}
+.home-desc{
+    position: relative;
+    width: 90%;
+    font-size: 1.4vw;
+    color: rgb(196, 196, 196);
+    font-weight: 100;
+}
+.home-button-learn{
+    position: relative;
+    height: 7%;
+    width: 28%;
+    border: 1px solid white;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* height: 60px;
+    width: 250px; */
+    border-radius: 50px;
+    font-size: 1vw;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #c667c4, #a983e3, #869bf5, #64affc, #51c0f9);
+    transition: all 0.2s ease-in-out;
+}
+.home-button-learn:hover{
+    background: transparent;
+}
+
+.home-imgBackground{
+    position: relative;
+    width: 25%;
+    height: 90%;
+    margin-right: 50px;
+    /* background-image: url("../../public/growth.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;  */
+}
+.token-imgContainer{
+    position: absolute;
+    z-index: 100;
+    top: 5%;
+    left: 37%;
+    height: 30px;
+    width: 30px;
+    background-image: url("../../public/bitcoin.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+@media screen and (max-width:768px){
+    .home-container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        padding-top: 0px;
+        height: 100vh;
+    }
+    .home-first{
+        margin-left: 20px;
+        height: 60vh;
+        width: 100%;
+    }
+    .home-title{
+        height: 8vh;
+        font-size: 8vw;
+    }
+    .home-title1{
+        height: 10vh;
+        font-size: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .home-desc{
+        height: 19vh;
+        font-size: 3.2vw;
+    }
+    .home-imgBackground{
+        height: 30vh;
+        width: 40vw;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-button-learn{
+        width: 80vw;
+        height: 5vh;
+        font-size: 5vw;
+    }
+}
+/* @media screen and (max-width:375px) {
+
+    .home-container{
+        height: 80vh;
+        padding-top: 100px;
+    }
+    .home-first{
+        position: relative;
+        margin-left: 10px;
+        width: 45%;
+        height: 70vh;
+    }
+    .home-title{
+      
+        width: 100vw;
+    }
+    .home-title1{
+       
+    }
+    .home-desc{
+        width: 50vw;
+       
+    }
+    .home-button-learn{
+        height: 30px;
+        width: 140px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .home-imgBackground{
+        position: relative;
+        width: 50%;
+        background-position: center;
+        margin-top: 50px;
+    }
+    
+} */

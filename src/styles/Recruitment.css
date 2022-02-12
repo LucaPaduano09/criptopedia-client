@@ -1,0 +1,114 @@
+.recruit-container{
+    height: 80vh;
+    width: 100vw;
+    background-color: rgb(10, 21, 31);
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.recruit-wrapper{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 50%;
+    height: 100%;
+    margin-left: 200px;
+}
+  
+.recruit-wrapper > h1{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-size: 55px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 0px;
+}
+.recruit-wrapper > p{
+    position: relative;
+    width: 59%;
+    text-align: left;
+    font-size: 20px;
+    color: rgba(131, 130, 130, 0.863);
+}
+
+.recruit-form-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+}
+.recruit-form-container > div{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.recruit-form-container > div > label{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: -15px;
+    text-align: left;
+    color: rgba(131, 130, 130, 0.863);
+}
+.recruit-form-container > div >input{
+    height: 30px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+.recruit-form-container > div > button{
+    width: 400px;
+    height: 30px;
+    background-image: linear-gradient(to right, #c667c4, #a983e3, #869bf5, #64affc, #51c0f9);
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.recruit-imgBackground{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-image: url("../../public/hiring-people.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-right: 100px;
+}
+
+@media screen and (max-width:768px) {
+    .recruit-container{
+        height: 130vh;
+        margin-top: 0px;
+    }
+    .recruit-container > .recruit-wrapper > h1{
+        font-size: 30px;
+    }
+    .recruit-wrapper > p{
+        font-size: 10px;
+    }
+    .recruit-form-container > div > label{
+        font-size: 15px;
+    }
+    .recruit-form-container > div >input{
+        height: 15px;
+        width: 200px;
+    }
+    .recruit-form-container > div > button{
+        height: 15px;
+        width: 200px;
+    }
+}

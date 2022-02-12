@@ -1,0 +1,109 @@
+.guru-container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(10, 21, 31);
+    display: flex;
+}
+
+.guru-info-container{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.guru-info-container > h1{
+    position: relative;
+    width: 100%;
+    font-size: 55px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 300;
+    margin-bottom: -20px;
+    text-align: left;
+}
+.guru-info-container > p{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    color: rgb(170, 170, 170);
+    font-weight: 300;
+}
+.guru-button{
+    border: 1px solid white;
+    margin-left: 0px;
+    margin-top: 20px;
+    height: 60px;
+    width: 250px;
+    border-radius: 50px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #c667c4, #a983e3, #869bf5, #64affc, #51c0f9);
+    transition: all 0.2s ease-in-out;
+}
+.guru-button:hover{
+    background: transparent;
+}
+
+.guru-imgBackground{
+    position: relative;
+    width: 35%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    /* background-image: url("../../public/chatbot.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; */
+}
+
+@media screen and (max-width:768px) {
+    .guru-container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        height: 120vh;
+        margin-bottom: 50px;
+    }
+    .guru-imgBackground{
+        position: relative;
+        height: 50vh;
+        width: 100vw;
+        margin-left: 15px;
+    }
+    .guru-info-container{
+        position: relative;
+        height: 50vh;
+        width: 100vw;
+        margin-left: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .guru-info-container > h1{
+        font-size: 6vw;
+        margin-bottom: 0.2px;
+        width: 90%;
+    }
+    .guru-info-container > p{
+        font-size: 5vw;
+        position: relative;
+        width: 90%;
+    }
+    .guru-button{
+        height: 30px;
+        width: 80%;
+        font-size: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+    }
+}

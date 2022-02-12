@@ -1,0 +1,160 @@
+.crypto-container {
+  position: relative;
+  height: 100vh;
+  background-color: rgb(10, 21, 31);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.crypto-imgBackground {
+  position: relative;
+  height: 60%;
+  width: 30%;
+  /* background-image: url("../../public/secure.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; */
+  margin-right: 100px;
+}
+
+.crypto-imgContainer:hover {
+  transform: rotateX(center);
+}
+
+.crypto-container > div > img {
+  height: 450px;
+}
+
+.crypto-container > .crypto-info {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.crypto-container > div > h1 {
+  color: white;
+  font-size: 55px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+.crypto-container > div > img {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 23%;
+  right: 23%;
+}
+
+.crypto-container > div > p {
+  font-size: 30px;
+  width: 55%;
+  text-align: left;
+  font-weight: 100;
+  color: rgb(170, 170, 170);
+}
+
+.crypto-cards-container {
+  position: relative;
+  width: 50%;
+  padding-left: 150px;
+  background-color: transparent;
+  margin-top: 80px;
+}
+
+.crypto-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.crypto-cards-container > img {
+  height: 80px;
+  width: 80px;
+  transition: all 0.2s ease-in-out;
+}
+
+.crypto-cards-container > img:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+.crypto-layer {
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+
+.esplora-button {
+  border: 1px solid white;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 60px;
+  width: 250px;
+  border-radius: 50px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #c667c4,
+    #a983e3,
+    #869bf5,
+    #64affc,
+    #51c0f9
+  );
+  transition: all 0.2s ease-in-out;
+  margin-top: 30px;
+}
+
+.esplora-button:hover {
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .crypto-container {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .crypto-imgBackground {
+    width: 80vw;
+    height: 40vh;
+    margin-left: 100px;
+  }
+  .crypto-container > .crypto-info {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+  }
+  .crypto-info > .crypto-titolo {
+    font-size: 8.4vw;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .crypto-container > .crypto-info > p {
+    font-size: 4vw;
+    position: relative;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .crypto-container > .crypto-info > img{
+      top: 13%;
+      right: 5%;
+  }
+  .esplora-button{
+      height: 35px;
+      font-size: 5vw;
+  }
+}

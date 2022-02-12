@@ -1,0 +1,43 @@
+.monete-container {
+  margin-top: 200px;
+}
+.cryptopage-container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 800px;
+  background-image: linear-gradient(
+    to right,
+    #c667c4,
+    #a983e3,
+    #869bf5,
+    #64affc,
+    #51c0f9
+  );
+}
+.inner-wrapper {
+  position: absolute;
+  top: 0;
+  height: 198px;
+  width: 800px;
+  background-color: rgb(10, 21, 31);
+}
+.cryptopage-container:first-child {
+  margin-top: 100px;
+}
+
+.cryptopage-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 200px;
+}
+.cryptopage-description > h2 {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
