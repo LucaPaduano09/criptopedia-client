@@ -9,7 +9,7 @@ const Admin = () => {
         if(username === "admin"){
             if(password === "123456"){
                 console.log("credenziali valide")
-                history.push("/")
+                history.push("/admin-home")
             }
         }else{
             window.alert("credenziali non valide")
