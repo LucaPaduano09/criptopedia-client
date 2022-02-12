@@ -13,6 +13,7 @@ import SingleCrypto from "./components/Crypto/SingleCrypto";
 import Admin from "./components/admin/Admin";
 import AdminHome from "./components/admin/AdminHome";
 import Sidebar from "./components/admin/Sidebar";
+import CryptoAdd from "./components/admin/CryptoAdd";
 
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 function App() {
@@ -49,6 +50,7 @@ function App() {
           </Route>
           <Route path={"/cryptos-add"}>
             <Sidebar />
+            <CryptoAdd />
           </Route>
           <Route path={"/"}>
             <Header />

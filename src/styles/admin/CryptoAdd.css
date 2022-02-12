@@ -1,0 +1,22 @@
+.crypto-add-container{
+    position: relative;
+    height: 100vh;
+    width: calc(100vw - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 200px;
+}
+.crypto-add-form{
+    position: relative;
+    height: 50vh;
+    width: 30vw;
+    background-color: gray;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
