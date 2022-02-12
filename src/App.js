@@ -12,36 +12,46 @@ import CryptoPage from "./components/Crypto/CryptoPage";
 import SingleCrypto from "./components/Crypto/SingleCrypto";
 import Admin from "./components/admin/Admin";
 import AdminHome from "./components/admin/AdminHome";
+import Sidebar from "./components/admin/Sidebar";
 
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
         <Switch>
           <Route path={"/cryptos"}>
-           <CryptoPage />
+            <Header />
+            <CryptoPage />
           </Route>
           <Route path={"/monete/:id"}>
+            <Header />
             <SingleCrypto />
           </Route>
           <Route path={"/login"}>
+            <Header />
             <Login />
           </Route>
           <Route path={"/lavora-con-noi"}>
+            <Header />
             <Recruitment />
           </Route>
           <Route path={"/guida"}>
+            <Header />
             <Guida />
           </Route>
           <Route path={"/admin"}>
             <Admin />
           </Route>
           <Route path={"/admin-home"}>
+            <Sidebar />
             <AdminHome />
           </Route>
+          <Route path={"/cryptos-add"}>
+            <Sidebar />
+          </Route>
           <Route path={"/"}>
+            <Header />
             <Home />
             <Crypto />
             <Guru />
