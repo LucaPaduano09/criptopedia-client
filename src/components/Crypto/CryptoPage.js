@@ -24,7 +24,7 @@ export default function ProductList() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getProducts() {
-      const response = await fetch(`http://localhost:5000/monete/`);
+      const response = await fetch(`https://criptopedia.herokuapp.com/monete/`);
 
       if (!response.ok) {
         const message = `An error occured: ${response.statusText}`;
@@ -43,7 +43,7 @@ export default function ProductList() {
 
   // This method will delete a record
   async function deleteRecord(id) {
-    await fetch(`http://localhost:5000/${id}`, {
+    await fetch(`https://criptopedia.herokuapp.com/${id}`, {
       method: "DELETE",
     });
 

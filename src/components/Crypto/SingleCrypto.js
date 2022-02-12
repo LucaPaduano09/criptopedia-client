@@ -7,7 +7,7 @@ const SingleCrypto = () => {
   useEffect(() => {
     async function getProduct() {
       const response = await fetch(
-        "http://localhost:5000/monete/" + id,
+        "https://criptopedia.herokuapp.com/monete/" + id,
         {
           method: "GET",
         }
