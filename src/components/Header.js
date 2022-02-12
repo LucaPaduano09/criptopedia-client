@@ -29,7 +29,7 @@ const Header = () => {
         <img src="/facebook.png" alt="social-icon" />
         <img src="/instagram.png" alt="social-icon" />
         <img src="/twitter.png" alt="social-icon" />
-        <Link to={"/login"}>
+        <Link to={"/admin"}>
           <img
             className="user-social"
             src="/grandfather.png"
