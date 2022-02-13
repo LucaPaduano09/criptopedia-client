@@ -13,7 +13,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 .home-title{
     color: white;
@@ -62,7 +62,7 @@
 
 .home-imgBackground{
     position: relative;
-    width: 25%;
+    margin-left: 10px;
     height: 90%;
     margin-right: 50px;
     /* background-image: url("../../public/growth.png");
@@ -115,7 +115,6 @@
     }
     .home-imgBackground{
         height: 30vh;
-        width: 40vw;
         background-size: cover;
         display: flex;
         align-items: center;
@@ -126,6 +125,7 @@
         width: 80vw;
         height: 5vh;
         font-size: 5vw;
+        margin-top: 60px;
     }
 }
 /* @media screen and (max-width:375px) {

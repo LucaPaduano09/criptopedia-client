@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/Home.css";
 import Bounce from "react-reveal";
 import Lottie from "react-lottie";
-import Animazione from "./home.json";
+import Animazione from "./home1.json";
 
 const Home = () => {
   const defaultOptions = {
