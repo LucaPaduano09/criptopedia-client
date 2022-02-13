@@ -68,6 +68,12 @@ export default function ProductList() {
   async function deleteRecord(id) {
     await fetch(`https://criptopedia.herokuapp.com/${id}`, {
       method: "DELETE",
+      mode: "cors", // no-cors, *cors, same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
     const newRecords = monete.filter((el) => el._id !== id);
