@@ -39,9 +39,9 @@ export default function ProductList() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getProducts() {
-      const response = await fetch(`https://criptopedia.herokuapp.com/monete`, {
+      const response = await fetch(`https://criptopedia.herokuapp.com/monete/`, {
         method: "GET", // *GET, POST, PUT, DELETE, etc.
-        mode: "no-cors", // no-cors, *cors, same-origin
+        mode: "cors", // no-cors, *cors, same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
         credentials: "same-origin", // include, *same-origin, omit
         headers: {
