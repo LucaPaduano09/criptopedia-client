@@ -1,6 +1,7 @@
 .footer-container{
+    position: relative;
     height: 45vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(3, 8, 12);
     display: flex;
     align-items: center;

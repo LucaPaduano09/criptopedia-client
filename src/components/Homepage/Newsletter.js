@@ -6,23 +6,18 @@ import Animazione from "./newsletter.json";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
-  const handleSubmit = (email) => {
-    console.log("entro in handlesubmit")
-    async function subscribe() {
-      const response = await fetch(`https://criptopedia.herokuapp.com/newsletter/add`,{
-        method:"POST",
-        body: email
-      });
-
-      if (!response.ok) {
-        const message = `An error occured: ${response.statusText}`;
-        window.alert(message);
-        return;
-      }else{
-        window.alert('email salvata con successo')
-      }
-    }
-    subscribe()
+  const [success,setSuccess] = useState(false);
+  const handleSubmit = async (email) => {
+    console.log("entro in handlesubmit",email)
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({email: email})
+  };
+  const response = await fetch('https://criptopedia.herokuapp.com/newsletter/add', requestOptions);
+    const data = await response.json();
+    console.log(data)
+    setSuccess(true);
   }
 
   const defaultOptions = {
@@ -46,6 +41,9 @@ const Newsletter = () => {
             <input type="text" placeholder="email" onChange={(e) => {setEmail(e.target.value)}}/>
             <button className="invia-button" onClick={() => handleSubmit(email)}>invia</button>
           </div>
+          {
+            success === true && <div className="newsletter-success-banner">Iscrizione effettuata con successo</div> 
+          }
         </div>
       </Bounce>
       <Bounce right>

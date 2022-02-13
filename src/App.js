@@ -58,9 +58,9 @@ function App() {
             <Crypto />
             <Guru />
             <Newsletter />
-            <Footer />
           </Route>
         </Switch>
+            <Footer />
       </div>
     </Router>
   );

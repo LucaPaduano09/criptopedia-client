@@ -92,6 +92,19 @@
   background-size: contain;
   border-radius: 40%;
 }
+.newsletter-success-banner{
+  position: relative;
+  height: 7vh;
+  width: 25vw;
+  margin-bottom: 30px;
+  border: 2px solid rgb(2, 80, 2);
+  background-color: rgba(147, 247, 147, 0.74);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1vw;
+}
 
 @media screen and (max-width: 768px) {
   .newsletter-container{
@@ -141,5 +154,10 @@
    width: 30%;
    font-size: 5vw;
    height: 30px;
+  }
+  .newsletter-success-banner{
+    height: 5vh;
+    width: 80vw;
+    font-size: 2.6vw;
   }
 }
