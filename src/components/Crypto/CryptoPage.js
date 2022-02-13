@@ -40,12 +40,13 @@ export default function ProductList() {
   useEffect(() => {
     async function getProducts() {
       const response = await fetch(`https://criptopedia.herokuapp.com/monete`, {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        method: "GET", // *GET, POST, PUT, DELETE, etc.
         mode: "no-cors", // no-cors, *cors, same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
         credentials: "same-origin", // include, *same-origin, omit
         headers: {
           "Content-Type": "application/json",
+          
         },
       });
 
