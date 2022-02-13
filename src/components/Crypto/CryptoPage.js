@@ -33,7 +33,7 @@ export default function ProductList() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getProducts() {
-      const response = await fetch(`https://criptopedia.herokuapp.com/monete/`);
+      const response = await fetch(`https://criptopedia.herokuapp.com/monete`);
 
       if (!response.ok) {
         const message = `An error occured: ${response.statusText}`;
