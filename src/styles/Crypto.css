@@ -119,7 +119,7 @@
 
 @media screen and (max-width: 768px) {
   .crypto-container {
-    height: 70vh;
+    height: 85vh;
     width: 100vw;
     flex-direction: column-reverse;
     align-items: center;

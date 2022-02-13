@@ -73,10 +73,6 @@
 .newsletter-imgContainer {
   width: 50vw;
   height: 80vh;
-  background-image: url("../../public/newsletter-colored.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
   margin-right: 50px;
 }
 .mezzo-bitcoin{
