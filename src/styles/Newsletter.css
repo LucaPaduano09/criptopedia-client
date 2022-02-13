@@ -109,7 +109,7 @@
 @media screen and (max-width: 768px) {
   .newsletter-container{
     position: relative;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -118,8 +118,8 @@
   }
   .newsletter-imgContainer {
    position: relative;
-   height: 50vh;
-   width: 90vw;
+   height: 40vh;
+   width: 80vw;
    margin-left: 50px;
   }
   .newsletter-info {

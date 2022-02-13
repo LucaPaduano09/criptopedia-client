@@ -19,7 +19,6 @@ const Home = () => {
         <div className="home-first">
           <div className="home-info">
             <p className="home-title1">Criptopedia</p>
-            {/* <div className="token-imgContainer"></div> */}
             <p className="home-title">la casa delle criptovalute</p>
             <p className="home-desc">
               Assets , Blockchain , Token , NFT , Smart Contract , sono tutti

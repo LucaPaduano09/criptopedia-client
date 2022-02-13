@@ -70,18 +70,18 @@
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
-        height: 120vh;
+        height: 80vh;
         margin-bottom: 50px;
     }
     .guru-imgBackground{
         position: relative;
-        height: 50vh;
+        height: 40vh;
         width: 100vw;
         margin-left: 15px;
     }
     .guru-info-container{
         position: relative;
-        height: 50vh;
+        height: 70vh;
         width: 100vw;
         margin-left: 30px;
         align-items: center;

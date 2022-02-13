@@ -87,10 +87,10 @@
     .home-container{
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: flex-end;
         flex-direction: column-reverse;
         padding-top: 0px;
-        height: 100vh;
+        height: 120vh;
     }
     .home-first{
         margin-left: 20px;
@@ -109,8 +109,9 @@
         justify-content: flex-start;
     }
     .home-desc{
-        height: 19vh;
-        font-size: 3.2vw;
+        position: relative;
+        height: 45vh;
+        font-size: 5.2vw;
     }
     .home-imgBackground{
         height: 30vh;
@@ -119,6 +120,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 100px;
     }
     .home-button-learn{
         width: 80vw;
