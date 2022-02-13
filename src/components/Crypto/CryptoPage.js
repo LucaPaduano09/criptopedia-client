@@ -4,7 +4,7 @@ import "../../styles/CryptoPage.css";
 
 const CryptoPage = (props) => (
   <div className="cryptopage-container">
-      <Link to={`/monete/` + props.url}>
+    <Link to={`/monete/` + props.url}>
       <div className="inner-wrapper">
         <div className="cryptopage-description">
           <img
@@ -17,15 +17,21 @@ const CryptoPage = (props) => (
               {props.moneta.nome_moneta}
             </h2>
             <div className="cryptopage-token-categories">
-              <p className="cryptopage-token-category">{props.moneta.categories[0]}</p>
-              <p className="cryptopage-token-category">{props.moneta.categories[1]}</p>
-              <p className="cryptopage-token-category">{props.moneta.categories[2]}</p>
+              <p className="cryptopage-token-category">
+                {props.moneta.categories[0]}
+              </p>
+              <p className="cryptopage-token-category">
+                {props.moneta.categories[1]}
+              </p>
+              <p className="cryptopage-token-category">
+                {props.moneta.categories[2]}
+              </p>
             </div>
           </div>
         </div>
       </div>
-  </Link>
-    </div>
+    </Link>
+  </div>
 );
 
 export default function ProductList() {
@@ -33,7 +39,15 @@ export default function ProductList() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getProducts() {
-      const response = await fetch(`https://criptopedia.herokuapp.com/monete`,{mode:"no-cors"});
+      const response = await fetch(`https://criptopedia.herokuapp.com/monete`, {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        mode: "cors", // no-cors, *cors, same-origin
+        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: "same-origin", // include, *same-origin, omit
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       if (!response.ok) {
         const message = `An error occured: ${response.statusText}`;
