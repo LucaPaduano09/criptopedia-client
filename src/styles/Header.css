@@ -251,24 +251,25 @@
 @media screen and (max-width: 768px) {
   .header-container {
     padding-left: 10px;
+    height: 130px;
   }
   .header-menu {
     margin-left: 0px;
   }
   .header-menu > a > li {
-    font-size: 15px;
+    font-size: 2.6vw;
   }
   .user-social {
-    right: 5%;
+    right: 1%;
     top: 40%;
   }
   .header-social > a > img {
-    height: 15px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
   }
   .header-social > img {
-    height: 15px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
   }
   .mobile-menu-wrapper {
     position: fixed;
