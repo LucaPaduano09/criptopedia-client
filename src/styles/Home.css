@@ -123,7 +123,7 @@
     }
     .home-button-learn{
         width: 80vw;
-        height: 5vh;
+        height: 35px;
         font-size: 5vw;
         margin-top: 60px;
     }
@@ -159,3 +159,86 @@
         width: 100vw;
     }
 }
+
+/* iPhone 13, iPhone 12 and iPhone 12 Pro */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) { 
+        .home-container{
+            height: 140vh;
+        }
+        .home-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .home-first{
+            height: 90vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .home-button-learn{
+            margin-top: 120px;
+            margin-bottom: -110px;
+        }
+        .home-imgBackground{
+            height: 30vh;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            margin-left: 50px;
+            width: 100vw;
+        }
+        .home-desc{
+            font-size: 5.7vw;
+        }
+        .home-title{
+            margin-bottom: -20px;
+        }
+    }
+
+/* iPhone 13 Pro Max and iPhone 12 Pro Max */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) {
+        .home-container{
+            height: 132vh;
+        }
+        .home-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .home-first{
+            height: 90vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .home-title1{
+            margin-bottom: 10px;
+            margin-top: -80px;
+            font-size: 13vw;
+        }
+        .home-title{
+            font-size: 9vw;
+            margin-bottom: -20px;
+        }
+        .home-button-learn{
+            margin-top: 50px;
+            margin-bottom: -180px;
+        }
+        .home-imgBackground{
+            height: 30vh;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            margin-left: 50px;
+            width: 100vw;
+        }
+    }
