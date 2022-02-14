@@ -70,22 +70,25 @@
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
-        height: 90vh;
+        height: 140vh;
         margin-bottom: 50px;
     }
     .guru-imgBackground{
         position: relative;
-        height: 40vh;
+        height: 80vh;
         width: 100vw;
         margin-left: 15px;
+        margin-top: -60px;
+        margin-bottom: 0px;
     }
     .guru-info-container{
         position: relative;
-        height: 70vh;
+        height: 90vh;
         width: 100vw;
         margin-left: 30px;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px;
     }
     .guru-info-container > h1{
         font-size: 6vw;
@@ -98,12 +101,13 @@
         width: 90%;
     }
     .guru-button{
-        height: 30px;
+        height: 45px;
         width: 80%;
         font-size: 5vw;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 1px;
+        margin-bottom: 50px;
     }
 }

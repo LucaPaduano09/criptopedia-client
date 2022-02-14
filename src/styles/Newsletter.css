@@ -105,7 +105,7 @@
 @media screen and (max-width: 768px) {
   .newsletter-container{
     position: relative;
-    height: 100vh;
+    height: 138vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -114,7 +114,7 @@
   }
   .newsletter-imgContainer {
    position: relative;
-   height: 40vh;
+   height: 72vh;
    width: 80vw;
    margin-left: 50px;
   }
@@ -143,13 +143,15 @@
   }
   .newsletter-form-container > input {
     position: relative;
-    width: 70%;
+    width: 60%;
+    margin-left: 20px;
+    height: 45px;
   }
   .invia-button {
    position: relative;
    width: 30%;
    font-size: 5vw;
-   height: 30px;
+   height: 45px;
   }
   .newsletter-success-banner{
     height: 5vh;

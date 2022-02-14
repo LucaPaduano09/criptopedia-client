@@ -259,7 +259,7 @@
     font-size: 15px;
   }
   .user-social {
-    right: 10%;
+    right: 5%;
     top: 40%;
   }
   .header-social > a > img {
@@ -274,7 +274,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 103vh;
     width: 110vw;
     background-color: black;
     display: flex;
@@ -282,6 +282,7 @@
     justify-content: space-evenly;
     color: white;
     flex-direction: column;
+    transition: all 0.5s ease-in-out;
   }
 }
 
