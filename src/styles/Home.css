@@ -135,7 +135,7 @@
 /* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
 @media screen and (max-width:375px) {
     .home-container{
-        height: 115vh;
+        height: 125vh;
     }
     .home-info{
         display: flex;
@@ -150,6 +150,8 @@
     }
     .home-button-learn{
         margin-top: 40px;
+        height: 35px;
+        margin-left: 20px;
     }
     .home-imgBackground{
         height: 30vh;

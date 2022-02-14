@@ -174,7 +174,7 @@
 /* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
 @media screen and (max-width:375px) {
   .crypto-container{
-    height: 100vh;
+    height: 90vh;
   }
   .crypto-imgBackground {
     width: 80vw;
@@ -213,5 +213,6 @@
   .esplora-button{
       height: 35px;
       font-size: 5vw;
+      margin-top: 15px;
   }
 }
