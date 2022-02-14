@@ -165,3 +165,48 @@
       font-size: 5vw;
   }
 }
+
+/* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
+@media screen and (max-width:375px) {
+  .crypto-container{
+    height: 100vh;
+  }
+  .crypto-imgBackground {
+    width: 80vw;
+    height: 40vh;
+    margin-left: 100px;
+  }
+  .crypto-container > .crypto-info {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+  }
+  .crypto-info > .crypto-titolo {
+    font-size: 8.4vw;
+    position: relative;
+    height: 23%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .crypto-container > .crypto-info > p {
+    font-size: 5.5vw;
+    position: relative;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    height: 33%;
+  }
+  .crypto-container > .crypto-info > img{
+      top: 13%;
+      right: 5%;
+  }
+  .esplora-button{
+      height: 35px;
+      font-size: 5vw;
+  }
+}

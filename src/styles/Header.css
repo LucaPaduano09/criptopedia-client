@@ -111,10 +111,11 @@
   transition: all 1.5s ease-in-out;
 }
 .mobile-menu-wrapper {
-    width: 0;
-    transition: all 1.5s ease-in-out;
+  width: 0;
+  transition: all 1.5s ease-in-out;
 }
 
+/* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
 @media screen and (max-width: 375px) {
   .header-container {
     padding-left: 0px;
@@ -156,6 +157,96 @@
       z-index: 1000;
   }
 }
+/* iPhone 13, iPhone 12 and iPhone 12 Pro */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) { 
+      .header-container {
+        padding-left: 0px;
+        height: 50px;
+      }
+      .header-logo {
+        justify-content: flex-start;
+      }
+      .header-logo > img {
+        height: 100px;
+        width: 150px;
+      }
+      .header-menu {
+        display: none;
+      }
+      .header-social {
+        display: none;
+      }
+      .mobile-menu-container {
+        display: block;
+        width: 10%;
+      }
+      .mobile-menu-container > button{
+          border: none;
+          background-color: transparent;
+      }
+      .mobile-menu-container > button > img {
+        height: 25px;
+        width: 25px;
+      }
+      .mobile-close{
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background-color: white;
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          z-index: 1000;
+      }
+    }
+
+/* iPhone 13 Pro Max and iPhone 12 Pro Max */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) {
+      .header-container {
+        padding-left: 0px;
+        height: 50px;
+      }
+      .header-logo {
+        justify-content: flex-start;
+      }
+      .header-logo > img {
+        height: 100px;
+        width: 150px;
+      }
+      .header-menu {
+        display: none;
+      }
+      .header-social {
+        display: none;
+      }
+      .mobile-menu-container {
+        display: block;
+        width: 10%;
+      }
+      .mobile-menu-container > button{
+          border: none;
+          background-color: transparent;
+      }
+      .mobile-menu-container > button > img {
+        height: 25px;
+        width: 25px;
+      }
+      .mobile-close{
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background-color: white;
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          z-index: 1000;
+      }
+     }
+
 
 @media screen and (max-width: 768px) {
   .header-container {
@@ -193,3 +284,4 @@
     flex-direction: column;
   }
 }
+

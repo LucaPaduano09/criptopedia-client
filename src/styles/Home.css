@@ -128,40 +128,34 @@
         margin-top: 60px;
     }
 }
-/* @media screen and (max-width:375px) {
 
+/* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
+@media screen and (max-width:375px) {
     .home-container{
-        height: 80vh;
-        padding-top: 100px;
+        height: 140vh;
+    }
+    .home-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     .home-first{
-        position: relative;
-        margin-left: 10px;
-        width: 45%;
-        height: 70vh;
-    }
-    .home-title{
-      
-        width: 100vw;
-    }
-    .home-title1{
-       
-    }
-    .home-desc{
-        width: 50vw;
-       
+        height: 90vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .home-button-learn{
-        height: 30px;
-        width: 140px;
-        font-size: 15px;
-        margin-top: 5px;
+        margin-top: 90px;
     }
     .home-imgBackground{
-        position: relative;
-        width: 50%;
-        background-position: center;
-        margin-top: 50px;
+        height: 30vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 50px;
+        width: 100vw;
     }
-    
-} */
+}
