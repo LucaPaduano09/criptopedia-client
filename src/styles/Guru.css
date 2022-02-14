@@ -122,8 +122,8 @@
     }
     .guru-imgBackground{
         position: relative;
-        height: 80vh;
-        width: 100vw;
+        height: 50vh;
+        width: 90vw;
         margin-left: 15px;
         margin-top: -60px;
         margin-bottom: 0px;
@@ -148,7 +148,7 @@
         width: 90%;
     }
     .guru-button{
-        height: 45px;
+        height: 35px;
         width: 80%;
         font-size: 5vw;
         display: flex;

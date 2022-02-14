@@ -132,10 +132,46 @@
     }
 }
 
+
+/* Huawei p20 */
+@media screen and (device-width:360px) and (device-height:780px) {
+    .home-container{
+        height: 35vh;
+    }
+    .home-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .home-first{
+        height: 90vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .home-button-learn{
+        margin-top: 40px;
+        height: 35px;
+        margin-left: 20px;
+    }
+    .home-imgBackground{
+        height: 30vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 50px;
+        width: 100vw;
+    }
+}
+
+
+
 /* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
 @media screen and (max-width:375px) {
     .home-container{
-        height: 125vh;
+        height: 135vh;
     }
     .home-info{
         display: flex;
