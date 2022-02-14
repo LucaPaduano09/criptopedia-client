@@ -217,3 +217,15 @@
     font-size: 2.6vw;
   }
 }
+/* iPhone 13, iPhone 12 and iPhone 12 Pro */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) {
+      .newsletter-container{
+        height: 75vh;
+      }
+      .newsletter-imgContainer{
+        height: 40vh;
+        width: 100vw;
+      }
+}

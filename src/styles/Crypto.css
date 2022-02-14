@@ -216,3 +216,20 @@
       margin-top: 15px;
   }
 }
+
+
+/* iPhone 13, iPhone 12 and iPhone 12 Pro */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) {
+      .crypto-imgBackground{
+        height: 55vh;
+        width: 100vw;
+      }
+      .crypto-container > .crypto-info{
+        height: 50vh;
+      }
+      .crypto-container{
+        height: 100vh;
+      }
+}

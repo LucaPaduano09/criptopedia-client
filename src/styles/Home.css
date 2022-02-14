@@ -206,7 +206,7 @@
     and (device-width: 390px) 
     and (device-height: 844px) { 
         .home-container{
-            height: 140vh;
+            height: 129vh;
         }
         .home-info{
             display: flex;
@@ -214,7 +214,7 @@
             justify-content: space-evenly;
         }
         .home-first{
-            height: 90vh;
+            height: 60vh;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -222,6 +222,7 @@
         .home-button-learn{
             margin-top: 120px;
             margin-bottom: -110px;
+            margin-left: 20px;
         }
         .home-imgBackground{
             height: 30vh;
@@ -235,9 +236,14 @@
         }
         .home-desc{
             font-size: 5.7vw;
+            padding-left: 10px;
         }
         .home-title{
             margin-bottom: -20px;
+            padding-left: 10px;
+        }
+        .home-title1{
+            padding-left: 10px;
         }
     }
 

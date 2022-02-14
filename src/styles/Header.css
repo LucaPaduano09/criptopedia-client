@@ -182,6 +182,15 @@
     text-transform: uppercase;
     cursor: pointer;
   }
+  .mobile-menu-wrapper > a > h1{
+    font-size: 7.4vw;
+    height: 50px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 /* iPhone 13, iPhone 12 and iPhone 12 Pro */
 @media only screen 
@@ -220,11 +229,15 @@
           position: absolute;
           top: 10px;
           left: 10px;
-          background-color: white;
-          border-radius: 50%;
+          background-color: transparent;
+          border: none;
           height: 50px;
           width: 50px;
           z-index: 1000;
+      }
+      .mobile-close > img{
+        height: 35px;
+        width: 35px;
       }
       .mobile-menu-wrapper {
         position: fixed;
