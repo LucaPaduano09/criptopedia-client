@@ -9,7 +9,9 @@
   z-index: 100;
   background-color: rgb(10, 21, 31);
 }
-
+.w0{
+  width: 0vw;
+}
 .header-container-guida {
   position: absolute;
   height: 70px;
@@ -111,7 +113,6 @@
   transition: all 1.5s ease-in-out;
 }
 .mobile-menu-wrapper {
-  width: 0;
   transition: all 1.5s ease-in-out;
 }
 
@@ -148,13 +149,38 @@
   }
   .mobile-close{
       position: absolute;
-      top: 10px;
-      left: 10px;
-      background-color: white;
-      border-radius: 50%;
+      top: 5px;
+      left: 22px;
       height: 50px;
       width: 50px;
       z-index: 1000;
+      background-color: transparent;
+      border: none;
+  }
+  .mobile-close > img{
+    height: 30px;
+    width: 30px;
+  }
+  .mobile-menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 106vh;
+    width: 110vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    flex-direction: column;
+    transition: all 1.5s ease-in-out;
+  }
+  .mobile-menu-wrapper > h1{
+    font-size: 7.4vw;
+    height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
   }
 }
 /* iPhone 13, iPhone 12 and iPhone 12 Pro */
@@ -199,6 +225,20 @@
           height: 50px;
           width: 50px;
           z-index: 1000;
+      }
+      .mobile-menu-wrapper {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 103vh;
+        width: 0;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+        flex-direction: column;
+        transition: all 1.5s ease-in-out;
       }
     }
 
@@ -245,6 +285,20 @@
           width: 50px;
           z-index: 1000;
       }
+      .mobile-menu-wrapper {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 103vh;
+        width: 0;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+        flex-direction: column;
+        transition: all 1.5s ease-in-out;
+      }
      }
 
 
@@ -276,14 +330,14 @@
     top: 0;
     right: 0;
     height: 103vh;
-    width: 110vw;
+    width: 100vw;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     color: white;
     flex-direction: column;
-    transition: all 0.5s ease-in-out;
   }
+  
 }
 

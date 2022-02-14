@@ -14,12 +14,14 @@ import Admin from "./components/admin/Admin";
 import AdminHome from "./components/admin/AdminHome";
 import Sidebar from "./components/admin/Sidebar";
 import CryptoAdd from "./components/admin/CryptoAdd";
+import ScrollToTop from "./components/ScrollToTop";
 
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
       <div className="App">
+      <ScrollToTop />
         <Switch>
           <Route path={"/cryptos"}>
             <Header />
@@ -60,7 +62,7 @@ function App() {
             <Newsletter />
           </Route>
         </Switch>
-            <Footer />
+        <Footer />
       </div>
     </Router>
   );

@@ -1,6 +1,8 @@
 import { React, useState } from "react";
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
+import Slide from 'react-reveal/Slide';
+
 const Header = () => {
   const [show, setShow] = useState(false);
   return (
@@ -43,16 +45,23 @@ const Header = () => {
           </button>
         </div>
       {show ? (
-        <div className="mobile-menu-wrapper">
+        <Slide right>
+        <div id="hamb-menu"className="mobile-menu-wrapper">
           <button className="mobile-close"onClick={() => setShow(false)}>
-            X
+            <img src="/close.png" alt="close-button"/>
           </button>
+          <Link to="/" onClick={() => setShow(false)}>
           <h1>Home</h1>
+          </Link>
           <h1>Notizie</h1>
           <h1>Guida</h1>
-          <h1>Cryptos</h1>
+          <Link to="/cryptos" onClick={() => setShow(false)}>
+            <h1>Cryptos</h1>
+          </Link>
           <h1>NFT</h1>
+          {console.log("aperto")}
         </div>
+        </Slide>
       ) : (
         console.log("vuoto")
       )
