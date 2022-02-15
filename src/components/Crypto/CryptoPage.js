@@ -34,7 +34,10 @@ const CryptoPage = (props) => (
 );
 
 export default function ProductList() {
+  const [i, setI] = useState(0)
+  const [k, setK] = useState(8)
   const [monete, setMonete] = useState([]);
+
   // This method fetches the records from the database.
   useEffect(() => {
     async function getProducts() {
@@ -62,7 +65,7 @@ export default function ProductList() {
     getProducts();
 
     return;
-  }, [monete.length]);
+  }, );
 
   // This method will delete a record
   async function deleteRecord(id) {
@@ -82,7 +85,8 @@ export default function ProductList() {
 
   // This method will map out the records on the table
   function MoneteList() {
-    return monete.map((moneta) => {
+    const array = monete.slice(i,k)
+    return array.map((moneta) => {
       return (
         <CryptoPage
           moneta={moneta}
@@ -93,12 +97,26 @@ export default function ProductList() {
       );
     });
   }
+  function handleClick(){
+    setI(0)
+    setK(8)
+   console.log("cliccato")
+ }
+ function handleClick2(){
+     setI(8)
+     setK(16)
+    console.log("cliccato")
+  }
   return (
     <div className="monete-container">
       <h2 className="monete-titolo">
         In questa sezione troverai tutte le crypto listate da Criptopedia
       </h2>
       {MoneteList()}
+      <div className="filter-container">
+      <button onClick={handleClick}>1</button>
+      <button onClick={handleClick2}>2</button>
+      </div>
     </div>
   );
 }

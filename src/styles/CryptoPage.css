@@ -1,10 +1,12 @@
 .monete-container {
-  margin-top: 200px;
-  margin-bottom: 50px;
+  margin-top: 150px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+}
+.monete-titolo{
+  margin-bottom: 0px;
 }
 .cryptopage-container {
   position: relative;
@@ -26,6 +28,7 @@
 .inner-wrapper {
   position: absolute;
   top: 0;
+  left: 0;
   height: 198px;
   width: 800px;
   background-color: rgb(10, 21, 31);
@@ -58,7 +61,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 1.4vw;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .cryptopage-info {
   position: relative;
@@ -98,11 +101,10 @@
   margin-left: -20px;
 }
 /* Huawei p20 */
-@media only screen and (max-width:360px) and (max-height:781px){
+@media only screen and (max-width:360px) and (max-height:780px){
   .monete-container{
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 20px;
-    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
