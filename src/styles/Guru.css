@@ -111,58 +111,116 @@
         margin-bottom: 50px;
     }
 }
+/* MOBILE L */
+@media screen and (max-width:425px){
+    .guru-container{
+        height: 100vh;
+        width: 100vw;
+        margin-bottom: 0px;
+    }
+    .guru-imgBackground{
+        height: 30vh;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .guru-info-container{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+    }
+    .guru-info-container > p{
+        font-size: 4.5vw;
+        margin-bottom: 0px;
+        width: 90vw;
+    }
+    .guru-info-container > h1{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 5.5vw;
+    }
+    .guru-button{
+        height: 30px;
+        margin-left: 0px;
+        padding: 0px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+}
 
+/* Mobile M */
 @media screen and (max-width:375px){
     .guru-container{
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
         height: 100vh;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
     .guru-imgBackground{
         position: relative;
-        height: 50vh;
-        width: 90vw;
+        height: 30vh;
+        width: 100vw;
         margin-left: 15px;
-        margin-top: -60px;
-        margin-bottom: 0px;
+        margin-top: -80px;
+        margin-bottom: -80px;
     }
     .guru-info-container{
         position: relative;
-        height: 90vh;
         width: 100vw;
-        margin-left: 30px;
+        margin-left: 0px;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+        margin-top: 30px;
     }
     .guru-info-container > h1{
-        font-size: 6vw;
-        margin-bottom: 0.2px;
+        font-size: 6.5vw;
+        margin-bottom: 2px;
         width: 90%;
     }
     .guru-info-container > p{
-        font-size: 5vw;
+        font-size: 5.0vw;
         position: relative;
         width: 90%;
+        margin-top: 10px;
     }
     .guru-button{
-        height: 35px;
+        height: 30px;
         width: 80%;
         font-size: 5vw;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 1px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-top: 45px;
     }
 }
-/* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
-@media screen and (device-width: 375px) and (device-height:812px) {
-
+/* iPhone 6 / 7 / 8 */
+@media screen and (device-width:375px) and (device-height:667px){
+    .guru-container{
+        justify-content: flex-end;
+    }
+    .guru-button{
+        margin-left: 0px;
+    }
+    .guru-imgBackground{
+        margin-top: 10px;
+    }
+    .guru-info-container > p{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 4vw;
+    }
+    .guru-info-container > h1{
+        margin-bottom: 5px;
+    }
 }
-
 /* iPhone 13, iPhone 12 and iPhone 12 Pro */
 @media only screen 
     and (device-width: 390px) 

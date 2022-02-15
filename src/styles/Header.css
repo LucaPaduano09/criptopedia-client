@@ -1,5 +1,5 @@
 .header-container {
-  position: absolute;
+  position: fixed;
   height: 70px;
   width: 100vw;
   display: flex;
@@ -8,7 +8,7 @@
   z-index: 100;
   background-color: rgb(10, 21, 31);
 }
-.w0{
+.w0 {
   width: 0vw;
 }
 .header-container-guida {
@@ -30,8 +30,8 @@
 }
 
 .header-logo > img {
-  height: 100px;
-  width: 150px;
+  height: 70px;
+  width: 100px;
 }
 
 .header-menu {
@@ -104,8 +104,8 @@
 }
 .mobile-menu-container {
   position: absolute;
-  top: 8px;
-  right: 13px;
+  top: 22%;
+  right: 5%;
   display: none;
   overflow: hidden;
   width: 0;
@@ -114,12 +114,259 @@
 .mobile-menu-wrapper {
   transition: all 1.5s ease-in-out;
 }
-.mobile-menu-wrapper > a >h1 {
+.mobile-menu-wrapper > a > h1 {
   text-decoration: none;
 }
 
+/* Mobile L */
+@media screen and (max-width:425px) {
+  .header-container {
+    padding-left: 0px;
+    height: 50px;
+  }
+  .header-logo {
+    justify-content: flex-start;
+  }
+  .header-logo > img {
+    height: 50px;
+    width: 80px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-social {
+    display: none;
+  }
+  .mobile-menu-container {
+    display: block;
+    width: 10%;
+    top: 25%;
+    right: 3%;
+  }
+  .mobile-menu-container > button {
+    border: none;
+    background-color: transparent;
+  }
+  .mobile-menu-container > button > img {
+    height: 25px;
+    width: 25px;
+  }
+  .mobile-close {
+    position: absolute;
+    top: 0.2%;
+    left: 1%;
+    height: 50px;
+    width: 50px;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-close > img {
+    height: 30px;
+    width: 30px;
+  }
+  .mobile-menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 106vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    flex-direction: column;
+    transition: all 1.5s ease-in-out;
+  }
+  .mobile-menu-wrapper > h1 {
+    font-size: 7.4vw;
+    height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .mobile-menu-wrapper > a > h1 {
+    font-size: 7.4vw;
+    height: 50px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mobile-menu-wrapper > a {
+    text-decoration: none;
+  }
+}
 /* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
 @media screen and (max-width: 375px) {
+  .header-container {
+    padding-left: 0px;
+    height: 50px;
+  }
+  .header-logo {
+    justify-content: flex-start;
+  }
+  .header-logo > img {
+    height: 50px;
+    width: 80px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-social {
+    display: none;
+  }
+  .mobile-menu-container {
+    display: block;
+    width: 10%;
+    top: 25%;
+    right: 3%;
+  }
+  .mobile-menu-container > button {
+    border: none;
+    background-color: transparent;
+  }
+  .mobile-menu-container > button > img {
+    height: 25px;
+    width: 25px;
+  }
+  .mobile-close {
+    position: absolute;
+    top: 0.2%;
+    left: 1%;
+    height: 50px;
+    width: 50px;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-close > img {
+    height: 30px;
+    width: 30px;
+  }
+  .mobile-menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 106vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    flex-direction: column;
+    transition: all 1.5s ease-in-out;
+  }
+  .mobile-menu-wrapper > h1 {
+    font-size: 7.4vw;
+    height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .mobile-menu-wrapper > a > h1 {
+    font-size: 7.4vw;
+    height: 50px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mobile-menu-wrapper > a {
+    text-decoration: none;
+  }
+}
+/* iPhone 6 / 7 / 8 */
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+  .mobile-close {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    height: 50px;
+    width: 50px;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-menu-wrapper {
+    width: 100vw;
+  }
+}
+/* Mobile S */
+@media screen and (min-width:319px) and (max-width:370px) {
+  .mobile-close{
+    left: 1%;
+  }
+}
+
+/* iPhone 13, iPhone 12 and iPhone 12 Pro */
+@media only screen and (device-width: 390px) and (device-height: 844px) {
+  .header-container {
+    padding-left: 0px;
+    margin-top: 0px;
+    height: 50px;
+  }
+  .header-logo {
+    justify-content: flex-start;
+  }
+  .header-logo > img {
+    height: 50px;
+    width: 80px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-social {
+    display: none;
+  }
+  .mobile-menu-container {
+    display: block;
+    width: 10%;
+  }
+  .mobile-menu-container > button {
+    border: none;
+    background-color: transparent;
+  }
+  .mobile-menu-container > button > img {
+    height: 25px;
+    width: 25px;
+  }
+  .mobile-close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 1000;
+  }
+  .mobile-close > img {
+    height: 35px;
+    width: 35px;
+  }
+  .mobile-menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 103vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    flex-direction: column;
+    transition: all 1.5s ease-in-out;
+  }
+}
+
+/* iPhone 13 Pro Max and iPhone 12 Pro Max */
+@media only screen and (device-width: 428px) and (device-height: 926px) {
   .header-container {
     padding-left: 0px;
     height: 50px;
@@ -141,34 +388,30 @@
     display: block;
     width: 10%;
   }
-  .mobile-menu-container > button{
-      border: none;
-      background-color: transparent;
+  .mobile-menu-container > button {
+    border: none;
+    background-color: transparent;
   }
   .mobile-menu-container > button > img {
     height: 25px;
     width: 25px;
   }
-  .mobile-close{
-      position: absolute;
-      top: 5px;
-      left: 22px;
-      height: 50px;
-      width: 50px;
-      z-index: 1000;
-      background-color: transparent;
-      border: none;
-  }
-  .mobile-close > img{
-    height: 30px;
-    width: 30px;
+  .mobile-close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    z-index: 1000;
   }
   .mobile-menu-wrapper {
     position: fixed;
     top: 0;
     right: 0;
-    height: 106vh;
-    width: 110vw;
+    height: 103vh;
+    width: 0;
     background-color: black;
     display: flex;
     align-items: center;
@@ -177,212 +420,10 @@
     flex-direction: column;
     transition: all 1.5s ease-in-out;
   }
-  .mobile-menu-wrapper > h1{
-    font-size: 7.4vw;
-    height: 50px;
-    font-weight: 400;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-  .mobile-menu-wrapper > a > h1{
-    font-size: 7.4vw;
-    height: 50px;
-    font-weight: 400;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .mobile-menu-wrapper > a{
-    text-decoration: none;
-  }
 }
-/* altri breakpoints */
-@media screen and (min-width:376px) and (max-width:389px){
-  .header-menu{
-    display: none;
-  }
-  .header-logo{
-    justify-content: flex-start;
-    height: 70px;
-  }
-  .user-social{
-    display: none;
-  }
-  .header-social{
-    display: none;
-  }
-  .mobile-menu-container{
-    width: 10vw;
-    display:inline;
-  }
-  .mobile-menu-container > button{
-    background-color: transparent;
-    border: none;
-  }
-  .mobile-menu-container > button > img{
-    height: 30px;
-    width: 30px;
-  }
-}
-@media screen and (min-width:390px) and (max-width:428px){
-  .header-container{
-    height: 70px;
-  }
-  .header-menu{
-    display: none;
-  }
-  .user-social{
-    display: none;
-  }
-  .header-social{
-    display: none;
-  }
-  .header-logo{
-    justify-content: flex-start;
-  }
-  .header-logo > img{
-    height: 70px;
-    width: 100px;
-  }
-  .mobile-menu-container{
-    width: 10vw;
-    display:inline;
-  }
-  .mobile-menu-container > button{
-    background-color: transparent;
-    border: none;
-  }
-  .mobile-menu-container > button > img{
-    height: 30px;
-    width: 30px;
-  }
-}
-
-/* iPhone 13, iPhone 12 and iPhone 12 Pro */
-@media only screen 
-    and (device-width: 390px) 
-    and (device-height: 844px) { 
-      .header-container {
-        padding-left: 0px;
-        height: 50px;
-      }
-      .header-logo {
-        justify-content: flex-start;
-      }
-      .header-logo > img {
-        height: 100px;
-        width: 150px;
-      }
-      .header-menu {
-        display: none;
-      }
-      .header-social {
-        display: none;
-      }
-      .mobile-menu-container {
-        display: block;
-        width: 10%;
-      }
-      .mobile-menu-container > button{
-          border: none;
-          background-color: transparent;
-      }
-      .mobile-menu-container > button > img {
-        height: 25px;
-        width: 25px;
-      }
-      .mobile-close{
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          background-color: transparent;
-          border: none;
-          height: 50px;
-          width: 50px;
-          z-index: 1000;
-      }
-      .mobile-close > img{
-        height: 35px;
-        width: 35px;
-      }
-      .mobile-menu-wrapper {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 103vh;
-        width: 0;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        color: white;
-        flex-direction: column;
-        transition: all 1.5s ease-in-out;
-      }
-    }
-
-/* iPhone 13 Pro Max and iPhone 12 Pro Max */
-@media only screen 
-    and (device-width: 428px) 
-    and (device-height: 926px) {
-      .header-container {
-        padding-left: 0px;
-        height: 50px;
-      }
-      .header-logo {
-        justify-content: flex-start;
-      }
-      .header-logo > img {
-        height: 100px;
-        width: 150px;
-      }
-      .header-menu {
-        display: none;
-      }
-      .header-social {
-        display: none;
-      }
-      .mobile-menu-container {
-        display: block;
-        width: 10%;
-      }
-      .mobile-menu-container > button{
-          border: none;
-          background-color: transparent;
-      }
-      .mobile-menu-container > button > img {
-        height: 25px;
-        width: 25px;
-      }
-      .mobile-close{
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          background-color: white;
-          border-radius: 50%;
-          height: 50px;
-          width: 50px;
-          z-index: 1000;
-      }
-      .mobile-menu-wrapper {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 103vh;
-        width: 0;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        color: white;
-        flex-direction: column;
-        transition: all 1.5s ease-in-out;
-      }
-     }
 
 /* tablets breakpoints */
-@media screen and (min-width:750px) and (max-width: 998px) {
+@media screen and (min-width: 750px) and (max-width: 998px) {
   .header-container {
     padding-left: 10px;
     height: 50px;
@@ -418,15 +459,14 @@
     color: white;
     flex-direction: column;
   }
-  .header-social > a > img{
+  .header-social > a > img {
     height: 35px;
     width: 35px;
     top: 15%;
   }
-  
 }
 
-@media screen and (min-width:750px) and (max-width:850px){
+@media screen and (min-width: 750px) and (max-width: 850px) {
   .header-container {
     padding-left: 10px;
     height: 50px;
@@ -462,7 +502,7 @@
     color: white;
     flex-direction: column;
   }
-  .header-social > a > img{
+  .header-social > a > img {
     height: 25px;
     width: 25px;
     top: 25%;

@@ -7,11 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(10, 21, 31);
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 html{
   margin: 0;
   border: 0;
-  width: 101vw;
+  width: 100vw;
 }
 
 code {

@@ -21,16 +21,13 @@ const Home = () => {
             <p className="home-title1">Criptopedia</p>
             <p className="home-title">la casa delle criptovalute</p>
             <p className="home-desc">
-              Assets , Blockchain , Token , NFT , Smart Contract , sono tutti
+              Assets, Blockchain, Token, NFT, sono tutti
               termini che ti suonano nuovi? Non preoccuparti sei nel posto
               giusto! Lo scopo di Criptopedia e' quello di aiutare quante piu'
               persone possibilie ad avvicinarsi al crescente mondo delle crypto.
-              Qui troverai tutto cio di cui hai bisogno, sia se sei alle prime
+              Troverai tutto cio di cui hai bisogno, sia se sei alle prime
               armi, sia se sei un esperto. Grazie al nostro sistema di guida e
-              consulenza sarai seguito passo per passo nella tua avventura. Non
-              perderti nessuna notizia, Criptopedia pubblica articoli ogni
-              giorno per assicurarsi che i suoi lettori restino sempre ben
-              informati.
+              consulenza sarai seguito nella tua avventura.
             </p>
             <button className="home-button-learn">Scopri di piu</button>
           </div>

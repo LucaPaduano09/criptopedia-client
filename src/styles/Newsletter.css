@@ -160,6 +160,28 @@
   }
 }
 
+/* Mobile L */
+@media screen and (max-width:425px){
+  .newsletter-container{
+    height: 70vh;
+    margin-top: 0px;
+  }
+  .newsletter-imgContainer{
+    height: 30vh;
+    width: 60vw;
+  }
+  .newsletter-info{
+  }
+  .newsletter-form-container > input{
+    height: 30px;
+  }
+  .newsletter-form-container > button{
+    height: 30px;
+    width: 25%;
+  }
+}
+
+/* Mobile M */
 @media screen and (max-width: 375px){
   .newsletter-container{
     position: relative;

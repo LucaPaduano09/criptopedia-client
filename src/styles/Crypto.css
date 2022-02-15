@@ -149,7 +149,6 @@
     margin-top: -20px;
   }
   .crypto-container > .crypto-info > p {
-    font-size: 5.5vw;
     position: relative;
     width: 90%;
     margin-left: 10px;
@@ -171,15 +170,36 @@
   }
 }
 
-/* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
+/* Mobile L */
+@media screen and (max-width:425px){
+  .crypto-container{
+    height: 100vh;
+    margin-bottom: 0px;
+  }
+  .esplora-button{
+    height: 30px;
+    margin-left: 0px;
+  }
+  .crypto-container > div > p {
+    margin-bottom: 0px;
+    font-size: 4.5vw;
+  }
+  .esplora-button{
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+}
+
+/* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X  MOBILE M*/
 @media screen and (max-width:375px) {
   .crypto-container{
-    height: 90vh;
+    height: 100vh;
   }
   .crypto-imgBackground {
     width: 80vw;
     height: 40vh;
     margin-left: 100px;
+    margin-bottom: 0px;
   }
   .crypto-container > .crypto-info {
     position: relative;
@@ -196,27 +216,45 @@
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
+    margin-bottom: 50px;
   }
   .crypto-container > .crypto-info > p {
-    font-size: 5.5vw;
+    font-size: 5.0vw;
     position: relative;
     width: 90%;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
     height: 33%;
+    margin-bottom: 0px;
   }
   .crypto-container > .crypto-info > img{
-      top: 13%;
-      right: 5%;
+      top: 8%;
+      right: 6%;
   }
   .esplora-button{
       height: 35px;
       font-size: 5vw;
-      margin-top: 15px;
+      margin-top: 50px;
+      margin-left: 2px;
   }
 }
-
+/* iPhone 6 / 7 / 8 */
+@media screen and (device-width:375px) and (device-height:667px){
+  .esplora-button{
+    height: 30px;
+    margin-left: 0px;
+  }
+  .crypto-info > .crypto-titolo{
+    margin-bottom: 20px;
+  }
+  .crypto-container > .crypto-info > p{
+    font-size: 4vw;
+    height: 10vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
 
 /* iPhone 13, iPhone 12 and iPhone 12 Pro */
 @media only screen 

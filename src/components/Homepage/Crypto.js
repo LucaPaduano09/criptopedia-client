@@ -19,7 +19,7 @@ const Crypto = () => {
           <h1 className="crypto-titolo">Cryptos of the week</h1>
           <img src="/corona.png" alt="corona" />
           <p>
-            Criptopedia pubblichera' ogni settimana una lista di crypto compresa tra i 4 e gli 8 token che reputa interessanti, con previsioni, grafici e statistiche
+            Criptopedia pubblichera' ogni settimana una lista di crypto compresa tra i 4 e gli 8 token che reputa interessanti, con previsioni, grafici e statistiche. Troverai anche un elenco di tutte le crypto listate su Criptopedia!
           </p>
           <button className="esplora-button">Esplora</button>
         </div>
