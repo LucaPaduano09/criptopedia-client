@@ -10,7 +10,6 @@ const CryptoPage = (props) => (
           <img
             src={props.moneta.moneta_image}
             alt={props.moneta.nome_moneta}
-            style={{ position: "relative", height: "100px", width: "100px" }}
           />
           <div className="cryptopage-info">
             <h2 className="cryptopage-token-name">

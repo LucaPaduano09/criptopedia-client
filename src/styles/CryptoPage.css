@@ -36,21 +36,25 @@
   justify-content: space-evenly;
   margin-right: 200px;
 }
+.cryptopage-description > img {
+  height: 100px;
+  width: 100px;
+}
 .cryptopage-description > h2 {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
 }
-.monete-titolo{
+.monete-titolo {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 6.4vw;
   margin-bottom: 100px;
 }
-.cryptopage-info{
+.cryptopage-info {
   position: relative;
   display: flex;
   align-items: center;
@@ -59,7 +63,7 @@
   width: 320px;
   margin-left: 50px;
 }
-.cryptopage-token-name{
+.cryptopage-token-name {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -70,20 +74,194 @@
   width: 100%;
   text-align: left;
 }
-.cryptopage-token-categories{
+.cryptopage-token-categories {
   position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.cryptopage-token-category{
+.cryptopage-token-category {
   color: rgb(145, 145, 145);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 18px;
 }
-.cryptopage-token-category:first-child{
+.cryptopage-token-category:first-child {
   margin-left: -20px;
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px) {
+  .monete-container {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .monete-titolo {
+    font-size: 5.5vw;
+    margin-bottom: 20px;
+  }
+  .cryptopage-container {
+    height: 20.2vh;
+  }
+  .inner-wrapper {
+    width: 100vw;
+    height: 20vh;
+  }
+  .cryptopage-description > img {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+  }
+  .cryptopage-info {
+    margin-left: 15px;
+    align-items: flex-start;
+  }
+  .cryptopage-token-name {
+    font-size: 4.4vw;
+  }
+  .cryptopage-token-categories {
+    width: 50%;
+  }
+  .cryptopage-token-category {
+    font-size: 2.5vw;
+  }
+  .cryptopage-token-category:first-child {
+    margin-left: -10px;
+  }
+}
+
+/* iPhone 13, iPhone 12 and iPhone 12 Pro */
+@media screen and (device-width: 390px) and (device-height: 844px) {
+  .monete-container{
+    margin-top: 80px;
+  }
+  .monete-titolo{
+    margin-bottom: 30px;
+  }
+  .cryptopage-description > img{
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+  }
+  .cryptopage-info{
+    margin-left: 10px;
+  }
+  .cryptopage-token-name{
+    font-size: 5vw;
+  }
+  .cryptopage-token-category{
+    font-size: 4vw;
+    margin-left: 10px;
+  }
+}
+
+/* iPhone 13 Pro Max and iPhone 12 Pro Max */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) {
+      .monete-container{
+        margin-top: 80px;
+        margin-bottom: 40px;
+      }
+      .monete-titolo{
+        margin-bottom: 30px;
+      }
+      .cryptopage-container{
+        width: 100vw;
+        height: 20vh;
+      }
+      .cryptopage-description > img{
+        height: 70px;
+        width: 70px;
+        margin-left: 15px;
+      }
+      .cryptopage-info{
+        margin-left: 20px;
+      }
+      .cryptopage-token-name{
+        font-size: 4.5vw;
+      }
+      .cryptopage-token-category{
+        font-size: 4vw;
+      }
+    }
+
+
+/* Tablets breakpoints */
+@media screen and (max-width:820px){
+  .monete-container{
+    margin-top: 100px;
+  }
+  .monete-titolo{
+    font-size: 2.8vw;
+    margin-bottom: 40px;
+  }
+  .cryptopage-container{
+    width: 105vw;
+  }
+  .cryptopage-description{
+    position: relative;
+    width: 100%;
+  }
+  .cryptopage-info{
+    position: relative;
+    width: 80%;
+  }
+  .cryptopage-description > img{
+    height: 115px;
+    width: 115px;
+    margin-left: 15px;
+  }
+  .cryptopage-token-name{
+    font-size: 4vw;
+  }
+  .cryptopage-token-categories{
+    position: relative;
+    width: 100%;
+  }
+  .cryptopage-token-category{
+    font-size: 3.5vw;
+  }
+}
+
+/* Laptop breakpoints */
+@media screen and (max-width:1280px){
+  .monete-container{
+    margin-top: 120px;
+  }
+  .monete-titolo{
+    font-size: 3vw;
+  }
+  .cryptopage-container{
+    width: 100vw;
+  }
+  .inner-wrapper{
+    width: 101vw;
+  }
+  .cryptopage-description{
+    position: relative;
+    width: 100%;
+    margin-right: 250px;
+  }
+  .cryptopage-description > img{
+    height: 140px;
+    width: 140px;
+  }
+  .cryptopage-info{
+    position: relative;
+    width: 70%;
+    margin-left: -50px;
+  }
+  .cryptopage-token-name{
+    font-size: 2.3vw;
+    margin-left: 30px;
+  }
+  .cryptopage-token-category{
+    font-size: 2vw;
+  }
+  .cryptopage-token-category:first-child{
+    margin-left: -110px;
+  }
 }
