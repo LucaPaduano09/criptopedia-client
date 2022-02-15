@@ -163,12 +163,11 @@
 @media screen and (max-width: 375px){
   .newsletter-container{
     position: relative;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-    margin-top: 50px;
   }
   .newsletter-imgContainer {
    position: relative;
