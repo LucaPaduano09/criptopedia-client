@@ -96,6 +96,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 18px;
+  text-transform: capitalize;
 }
 .cryptopage-token-category:first-child {
   margin-left: -20px;

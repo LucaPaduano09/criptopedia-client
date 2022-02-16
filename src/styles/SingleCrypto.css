@@ -1,0 +1,40 @@
+.single-crypto-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 170px;
+}
+.single-crypto-info{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+.single-crypto-table{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.single-crypto-table > thead > tr > th {
+    color: white;
+}
+.crypto-table-image{
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.single-crypto-item{
+    color: white;
+    font-weight: 300;
+}
+.single-crypto-tbody{
+    height: 250px;
+}
+
+.single-crypto-description{
+    position: relative;
+    height: 120%;
+    width: 60%;
+    color: white;
+    padding: 20px;
+}

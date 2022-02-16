@@ -63,7 +63,6 @@ export default function ProductList() {
     }
 
     getProducts();
-
     return;
   }, );
 
@@ -112,7 +111,8 @@ export default function ProductList() {
       <h2 className="monete-titolo">
         In questa sezione troverai tutte le crypto listate da Criptopedia
       </h2>
-      {MoneteList()}
+      {monete.lenght < 8 && window.alert("stiamo caricando i dati")}
+      {monete.length>=8 && MoneteList()}
       <div className="filter-container">
       <button onClick={handleClick}>1</button>
       <button onClick={handleClick2}>2</button>

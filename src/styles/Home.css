@@ -137,9 +137,6 @@
     }
 }
 
-
-
-
 /* Mobile L */
 @media screen and (max-width: 425px) {
     .home-container{
@@ -183,21 +180,24 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
+    .home-title1{
+        margin-top: 0px;
+    }
     .home-first{
-        height: 80vh;
+        height: 70vh;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         margin-bottom: 0px;
     }
     .home-desc{
-        font-size: 5.0vw;
+        font-size: 4.5vw;
         margin-bottom: 0px;
-        height: 40vh;
+        height: 30vh;
     }
     .home-button-learn{
         margin-top: 0px;
-        height: 35px;
+        height: 30px;
         margin-left: 20px;
     }
     .home-imgBackground{

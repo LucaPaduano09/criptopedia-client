@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-
+import "../../styles/SingleCrypto.css"
 const SingleCrypto = () => {
   const [crypto, setCrypto] = useState({});
   const stringa = window.location.pathname;
@@ -25,9 +25,31 @@ const SingleCrypto = () => {
   return (
   <div className="single-crypto-container">
       <div className="single-crypto-info">
-          <h1>{crypto.nome_moneta}</h1>
-          <h2>{crypto.desc_moneta}</h2>
-          <img src={crypto.moneta_image} alt={crypto.nome_moneta}/>
+          <table className="single-crypto-table">
+            <thead>
+              <tr>
+                <th>Moneta</th>
+                <th>Nome</th>
+                <th>Creatore</th>
+                <th>Anno</th>
+                <th>Massimo</th>
+                <th>Minimo</th>
+              </tr>
+            </thead>
+            <tbody className="single-crypto-tbody">
+              <tr>
+                <td><img src={crypto.moneta_image} alt="moneta_image"className="crypto-table-image"/></td>
+                <td className="single-crypto-item">{crypto.nome_moneta}</td>
+                <td className="single-crypto-item">{crypto.autore}</td>
+                <td className="single-crypto-item">{crypto.anno}</td>
+                <td className="single-crypto-item">{crypto.massimo_moneta}€</td>
+                <td className="single-crypto-item">{crypto.minimo_moneta}€</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div className="single-crypto-description">
+        {crypto.desc_moneta}
       </div>
   </div>
   )
