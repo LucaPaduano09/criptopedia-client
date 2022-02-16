@@ -29,6 +29,8 @@ const Home = () => {
               armi, sia se sei un esperto. Grazie al nostro sistema di guida e
               consulenza sarai seguito nella tua avventura.
             </p>
+          </div>
+          <div className="home-button-container"style={{position:"relative",width:"100%", display:"flex", alignItems:"center"}}>
             <button className="home-button-learn">Scopri di piu</button>
           </div>
         </div>

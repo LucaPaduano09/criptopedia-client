@@ -37,18 +37,16 @@ export default function ProductList() {
   const [i, setI] = useState(0)
   const [k, setK] = useState(8)
   const [monete, setMonete] = useState([]);
-
   // This method fetches the records from the database.
   useEffect(() => {
     async function getProducts() {
       const response = await fetch(`https://criptopedia.herokuapp.com/monete/`, {
-        method: "GET", // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
+        method: "GET",
+        mode: "cors",
+        cache: "no-cache",
+        credentials: "same-origin",
         headers: {
-          "Content-Type": "application/json",
-          
+          "Content-Type": "application/json",          
         },
       });
 
@@ -111,8 +109,8 @@ export default function ProductList() {
       <h2 className="monete-titolo">
         In questa sezione troverai tutte le crypto listate da Criptopedia
       </h2>
-      {monete.lenght < 8 && window.alert("stiamo caricando i dati")}
-      {monete.length>=8 && MoneteList()}
+      {MoneteList()}
+      
       <div className="filter-container">
       <button onClick={handleClick}>1</button>
       <button onClick={handleClick2}>2</button>

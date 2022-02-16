@@ -44,8 +44,8 @@
 }
 .home-button-learn{
     position: relative;
-    height: 7%;
-    width: 28%;
+    height: 40px;
+    width: 200px;
     border: 1px solid white;
     margin-left: 20px;
     margin-top: 20px;
@@ -65,7 +65,7 @@
 .home-imgBackground{
     position: relative;
     margin-left: 10px;
-    height: 50%;
+    height: 60%;
     margin-right: 50px;
     width: 50vw;
     /* background-image: url("../../public/growth.png");
@@ -93,47 +93,53 @@
         justify-content: flex-end;
         flex-direction: column-reverse;
         padding-top: 0px;
-        height: 220vh;
-        margin-bottom: 50px;
+        height: 100vh;
+        margin-bottom: 20px;
+        margin-top: 0px;
     }
     .home-first{
         margin-left: 20px;
-        height: 60vh;
+        height: 80vh;
         width: 100%;
     }
     .home-title{
-        height: 8vh;
-        font-size: 8vw;
-        margin-bottom: -25px;
+        font-size: 4vw;
+        margin-bottom: 0px;
     }
     .home-title1{
-        height: 9vh;
-        font-size: 10vw;
+        font-size: 5vw;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin-bottom: -5px;
+        margin-bottom: 0px;
+        margin-top: 10px;
     }
     .home-desc{
         position: relative;
-        height: 45vh;
-        font-size: 5.2vw;
+        font-size: 2.8vw;
     }
     .home-imgBackground{
-        height: 50vh;
+        height: 200px;
         background-size: cover;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 130px;
-        margin-bottom: 100px;
+        margin-top: 90px;
+        margin-bottom: 30px;
     }
     .home-button-learn{
-        width: 80vw;
+        width: 40vw;
         height: 45px;
-        font-size: 5vw;
-        margin-top: 460px;
-        margin-left: 57px;
+        font-size: 2.8vw;
+        margin-top:30px;
+        margin-left: 0px;
+        margin-right: 18px;
+    }
+    .home-info{
+        height: 40vh;
+    }
+    .home-button-container{
+        justify-content: center;
     }
 }
 
@@ -186,12 +192,12 @@
     .home-first{
         height: 70vh;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 0px;
     }
     .home-desc{
-        font-size: 4.5vw;
+        font-size: 4.8vw;
         margin-bottom: 0px;
         height: 30vh;
     }
@@ -199,6 +205,7 @@
         margin-top: 0px;
         height: 30px;
         margin-left: 20px;
+        margin-bottom: 30px;
     }
     .home-imgBackground{
         height: 30vh;
@@ -241,6 +248,12 @@
         margin-left: 16px;
         margin-top: 30px;
         height: 30px;
+    }
+}
+/* Mobile S */
+@media screen and (max-width:320px){
+    .home-desc{
+        font-size: 5vw;
     }
 }
 /* iPhone 13, iPhone 12 and iPhone 12 Pro */

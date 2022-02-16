@@ -38,10 +38,10 @@
     border: 1px solid white;
     margin-left: 0px;
     margin-top: 20px;
-    height: 60px;
-    width: 250px;
+    height: 40px;
+    width: 200px;
     border-radius: 50px;
-    font-size: 24px;
+    font-size: 1vw;
     color: white;
     cursor: pointer;
     background-image: linear-gradient(to right, #c667c4, #a983e3, #869bf5, #64affc, #51c0f9);
@@ -198,7 +198,7 @@
         padding: 1px;
         margin-bottom: 0px;
         margin-left: 0px;
-        margin-top: 45px;
+        margin-top: 25px;
     }
 }
 /* iPhone 6 / 7 / 8 */

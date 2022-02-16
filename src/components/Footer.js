@@ -8,6 +8,7 @@ const Footer = () => {
       <div className="footer-imgBackground">
         <img src="/ft-image.jpg"/>
       </div>
+      <div className="footer-items">
       <Swing>
         <div className="footer-copy-container">
           <h1>Copyright©</h1>
@@ -38,11 +39,12 @@ const Footer = () => {
                 justifyContent: "center",
               }}
             >
-              <button>invia la candidatura</button>
+              <button className="footer-invia-button">invia la candidatura</button>
             </div>
           </Link>
         </div>
       </Swing>
+      </div>
     </div>
   );
 };

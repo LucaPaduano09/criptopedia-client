@@ -26,22 +26,27 @@ function App() {
           <Route path={"/cryptos"}>
             <Header />
             <CryptoPage />
+            <Footer />
           </Route>
           <Route path={"/monete/:id"}>
             <Header />
             <SingleCrypto />
+            <Footer />
           </Route>
           <Route path={"/login"}>
             <Header />
             <Login />
+            <Footer />
           </Route>
           <Route path={"/lavora-con-noi"}>
             <Header />
             <Recruitment />
+            <Footer />
           </Route>
           <Route path={"/guida"}>
             <Header />
             <Guida />
+            <Footer />
           </Route>
           <Route path={"/admin"}>
             <Admin />
@@ -60,9 +65,9 @@ function App() {
             <Crypto />
             <Guru />
             <Newsletter />
+            <Footer />
           </Route>
         </Switch>
-        <Footer />
       </div>
     </Router>
   );
