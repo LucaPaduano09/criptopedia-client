@@ -233,3 +233,24 @@
             height: 100vh;
         }
 }
+/* iPhone 13 Pro Max and iPhone 12 Pro Max */
+@media only screen and (device-width: 428px) and (device-height: 926px) {
+    .guru-container{
+        height: 100vh;
+        margin-bottom: -200px;
+    }
+    .guru-imgBackground{
+        height: 45vh;
+        width: 100vw;
+        margin-bottom: 0px;
+        margin-top: -60px;
+    }
+    .guru-info-container{
+        justify-content: flex-start;
+        margin-left: 0px;
+    }
+    .guru-button{
+        margin-left: 0px;
+        height: 40px;
+    }
+}

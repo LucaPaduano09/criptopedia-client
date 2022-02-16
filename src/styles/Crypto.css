@@ -271,3 +271,28 @@
         height: 100vh;
       }
 }
+
+/* iPhone 13 Pro Max and iPhone 12 Pro Max */
+@media only screen and (device-width: 428px) and (device-height: 926px) {
+  .crypto-container{
+    height: 100vh;
+    margin-left: 0px;
+  }
+  .crypto-imgBackground{
+    height: 45vh;
+    width: 100vw;
+    margin-bottom: 0px;
+  }
+  .crypto-info{
+    height: 55vh;
+  }
+  .crypto-container > .crypto-info > p{
+    font-size: 5vw;
+  }
+  .esplora-button{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height: 40px;
+  }
+}

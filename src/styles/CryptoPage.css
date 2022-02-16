@@ -358,29 +358,62 @@
     and (device-width: 428px) 
     and (device-height: 926px) {
       .monete-container{
-        margin-top: 80px;
-        margin-bottom: 40px;
+        margin-top: 100px;
+        margin-bottom: 20px;
       }
       .monete-titolo{
+        font-size: 4vw;
         margin-bottom: 30px;
       }
       .cryptopage-container{
-        width: 100vw;
+        position: relative;
+        width: 101vw;
         height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+      }
+      .cryptopage-container > a{
+        text-decoration: none;
+      }
+      .cryptopage-description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .cryptopage-description > img{
-        height: 70px;
-        width: 70px;
-        margin-left: 15px;
+        height: 60px;
+        width: 60px;
+        margin-left: 10px;
+      }
+      .cryptopage-container > a {
+        position: relative;
+        height: 98%;
+        width: 101vw;
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+      .inner-wrapper{
+        position: relative;
+        height: 100%;
       }
       .cryptopage-info{
-        margin-left: 20px;
+        margin-left: 15px;
       }
       .cryptopage-token-name{
-        font-size: 4.5vw;
+        font-size: 3.5vw;
+      }
+      .cryptopage-token-categories{
+        position: relative;
+        width: 30%;
       }
       .cryptopage-token-category{
-        font-size: 4vw;
+        font-size: 2.5vw;
+      }
+      .cryptopage-token-category:first-child{
+        margin-left: -131px;
       }
     }
 

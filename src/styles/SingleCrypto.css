@@ -38,3 +38,82 @@
     color: white;
     padding: 20px;
 }
+ .single-crypto-link{
+    position: relative;
+    border: 1px solid white;
+    height: 30px;
+    width: 20%;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #c667c4, #a983e3, #869bf5, #64affc, #51c0f9);
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.single-crypto-link > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Mobile L */
+@media screen and (max-width:425px) {
+    .single-crypto-container{
+        margin-top: 80px;
+    }
+    .single-crypto-info{
+        width: 100%;
+    }
+    .crypto-table-image{
+        height: 70px;
+        width: 70px;
+    }
+    .single-crypto-table > thead > tr > th{
+        font-size: 2.8vw;
+    }
+    .single-crypto-tbody{
+        height: 150px;
+    }
+    .single-crypto-tbody > tr > td {
+        font-size: 2.6vw;
+    }
+    .single-crypto-description{
+        width: 90%;
+    }
+    .single-crypto-link{
+        position: relative;
+        width: 80%;
+        font-size: 3.5vw;
+    }
+}
+/* iPhone 13 Pro Max and iPhone 12 Pro Max */
+@media only screen and (device-width: 428px) and (device-height: 926px) {
+    .single-crypto-container{
+        margin-top: 100px;
+    }
+    .single-crypto-info{
+        width: 100vw;
+    }
+    .crypto-table-image{
+        height: 70px;
+        width: 70px;
+    }
+    .single-crypto-table > thead > tr > th{
+        font-size: 2.8vw;
+    }
+    .single-crypto-tbody{
+        height: 150px;
+    }
+    .single-crypto-tbody > tr > td {
+        font-size: 2.6vw;
+    }
+    .single-crypto-description{
+        width: 90%;
+    }
+    .single-crypto-link{
+        position: relative;
+        width: 80%;
+        font-size: 3.5vw;
+    }
+}

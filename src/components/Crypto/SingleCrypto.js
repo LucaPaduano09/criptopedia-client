@@ -51,6 +51,11 @@ const SingleCrypto = () => {
       <div className="single-crypto-description">
         {crypto.desc_moneta}
       </div>
+      <div style={{width:"80vw"}}>
+        <button className="single-crypto-link">
+        <a target="_blank" href={crypto.link_acquisto}>Acquista {crypto.acronimo}</a>
+        </button>
+      </div>
   </div>
   )
 };
