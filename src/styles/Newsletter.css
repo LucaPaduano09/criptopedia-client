@@ -151,11 +151,11 @@
 /* Mobile L */
 @media screen and (max-width:425px){
   .newsletter-container{
-    height: 70vh;
+    height: 80vh;
     margin-top: 0px;
   }
   .newsletter-imgContainer{
-    height: 30vh;
+    height: 40vh;
     width: 60vw;
   }
   .newsletter-info{
@@ -212,13 +212,13 @@
     position: relative;
     width: 50%;
     margin-left: 20px;
-    height: 35px;
+    height: 30px;
   }
   .invia-button {
    position: relative;
    width: 25%;
    font-size: 5vw;
-   height: 35px;
+   height: 30px;
   }
   .newsletter-success-banner{
     height: 5vh;

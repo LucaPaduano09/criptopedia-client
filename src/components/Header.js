@@ -23,9 +23,9 @@ const Header = () => {
         <Link to="/guida">
           <li className="header-menu-option">Guida</li>
         </Link>
-        <Link to={"/"}>
+        {/* <Link to={"/"}>
           <li className="header-menu-option">NFT</li>
-        </Link>
+        </Link> */}
       </div>
       <div className="header-social">
         <img src="/facebook.png" alt="social-icon" />

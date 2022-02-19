@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/CryptoPage.css";
+import Lottie from "react-lottie";
+import Animazione from "./loading.json";
 
 const CryptoPage = (props) => (
   <div className="cryptopage-container">
     <Link to={`/monete/` + props.url}>
       <div className="inner-wrapper">
         <div className="cryptopage-description">
-          <img
-            src={props.moneta.moneta_image}
-            alt={props.moneta.nome_moneta}
-          />
+          <img src={props.moneta.moneta_image} alt={props.moneta.nome_moneta} />
           <div className="cryptopage-info">
             <h2 className="cryptopage-token-name">
               {props.moneta.nome_moneta}
@@ -34,21 +33,34 @@ const CryptoPage = (props) => (
 );
 
 export default function ProductList() {
-  const [i, setI] = useState(0)
-  const [k, setK] = useState(8)
+  const [i, setI] = useState(0);
+  const [k, setK] = useState(8);
   const [monete, setMonete] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: Animazione,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   // This method fetches the records from the database.
   useEffect(() => {
     async function getProducts() {
-      const response = await fetch(`https://criptopedia.herokuapp.com/monete/`, {
-        method: "GET",
-        mode: "cors",
-        cache: "no-cache",
-        credentials: "same-origin",
-        headers: {
-          "Content-Type": "application/json",          
-        },
-      });
+      setIsLoading(true);
+      const response = await fetch(
+        `https://criptopedia.herokuapp.com/monete/`,
+        {
+          method: "GET",
+          mode: "cors",
+          cache: "no-cache",
+          credentials: "same-origin",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (!response.ok) {
         const message = `An error occured: ${response.statusText}`;
@@ -58,11 +70,12 @@ export default function ProductList() {
 
       const records = await response.json();
       setMonete(records);
+      setIsLoading(false);
     }
 
     getProducts();
     return;
-  }, );
+  }, [monete.length]);
 
   // This method will delete a record
   async function deleteRecord(id) {
@@ -82,7 +95,7 @@ export default function ProductList() {
 
   // This method will map out the records on the table
   function MoneteList() {
-    const array = monete.slice(i,k)
+    const array = monete.slice(i, k);
     return array.map((moneta) => {
       return (
         <CryptoPage
@@ -94,26 +107,35 @@ export default function ProductList() {
       );
     });
   }
-  function handleClick(){
-    setI(0)
-    setK(8)
-   console.log("cliccato")
- }
- function handleClick2(){
-     setI(8)
-     setK(16)
-    console.log("cliccato")
+  function handleClick() {
+    setI(0);
+    setK(8);
+    console.log("cliccato");
+  }
+  function handleClick2() {
+    setI(8);
+    setK(16);
+    console.log("cliccato");
   }
   return (
     <div className="monete-container">
       <h2 className="monete-titolo">
         In questa sezione troverai tutte le crypto listate da Criptopedia
       </h2>
-      {MoneteList()}
-      
+      {isLoading ? (
+        <div>
+          <p style={{ color: "white" }}>Stiamo caricando i dati</p>
+          <div>
+            <Lottie style={{height:"200px",width:"200px"}} options={defaultOptions} />
+          </div>
+        </div>
+      ) : (
+        MoneteList()
+      )}
+
       <div className="filter-container">
-      <button onClick={handleClick}>1</button>
-      <button onClick={handleClick2}>2</button>
+        <button onClick={handleClick}>1</button>
+        <button onClick={handleClick2}>2</button>
       </div>
     </div>
   );

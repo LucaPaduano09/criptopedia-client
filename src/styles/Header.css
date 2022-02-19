@@ -35,12 +35,12 @@
 }
 
 .header-menu {
-  flex: 1;
+  flex: 2;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding-left: 20px;
-  margin-left: 65px;
+  margin-left: 160px;
 }
 
 .header-menu > li {

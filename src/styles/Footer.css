@@ -154,7 +154,7 @@
 @media screen and (max-width:768px) {
     .footer-container{
         flex-direction: column;
-        height: 90vh;
+        height: 95vh;
         width: 100vw;
         margin: 0 auto;
         border-right: 3px solid black;
@@ -195,7 +195,7 @@
     .footer-imgBackground{
         margin-right: 0px;
         width: 100vw;
-        height: 50vh;
+        height: 55vh;
     }
     .footer-imgBackground > img{
         position: relative;

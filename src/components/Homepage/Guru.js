@@ -2,7 +2,9 @@ import React from "react";
 import "../../styles/Guru.css";
 import LightSpeed from "react-reveal/LightSpeed";
 import Lottie from "react-lottie";
+import { Link } from "react-router-dom"
 import Animazione from "./ChatbotColourAnimation";
+
 const Guru = () => {
   const defaultOptions = {
     loop: true,
@@ -25,7 +27,9 @@ const Guru = () => {
             maggiori informazioni sul progetto, prospettiva o momento migliore
             per acquistarla, inizia una chat con il nostro Guru.
           </p>
-          <button className="guru-button">Chiedi al Guru</button>
+          <Link to="chiedi-al-guru">
+            <button className="guru-button">Chiedi al Guru</button>
+          </Link>
         </div>
       </LightSpeed>
       <LightSpeed>
