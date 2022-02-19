@@ -270,3 +270,24 @@
 
     }
 }
+/* iPhone 13 Pro Max and iPhone 12 Pro Max */
+@media only screen and (device-width: 428px) and (device-height: 926px) {
+    .footer-container{
+        height: 60vh;
+    }
+    .footer-imgBackground{
+        height: 30vh;
+    }
+    .footer-items{
+        margin-left: 0px;
+    }
+    .footer-copy-container > p{
+        font-size: 2.7vw;
+    }
+    .footer-contatti-container > a{
+        font-size: 2.7vw;
+    }
+    .footer-contatti-container > p{
+        font-size: 2.7vw;
+    }
+}

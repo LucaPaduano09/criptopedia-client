@@ -142,12 +142,20 @@
         margin-top: 0px;
         font-size: 5.5vw;
     }
+    .lng{
+        height: 30px;
+        padding: 0px;
+        margin-top: -10px;
+        margin-bottom: 50px;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+    }
     .guru-button{
         height: 30px;
-        margin-left: 0px;
         padding: 0px;
-        margin-right: 0px;
         margin-top: 40px;
+        width: 80vw;
     }
 }
 
@@ -188,9 +196,21 @@
         width: 90%;
         margin-top: 10px;
     }
-    .guru-button{
+    .lng{
         height: 30px;
-        width: 80%;
+        width: 80vw;
+        font-size: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .lng > .guru-button{
+        height: 30px;
+        width: 80vw;
         font-size: 5vw;
         display: flex;
         align-items: center;
@@ -249,8 +269,16 @@
         justify-content: flex-start;
         margin-left: 0px;
     }
+    .lng{
+        height: 40px;
+        width: 80vw;
+        text-decoration: none;
+        margin-right: 18px;
+    }
     .guru-button{
         margin-left: 0px;
         height: 40px;
+        width: 80vw;
+        
     }
 }
