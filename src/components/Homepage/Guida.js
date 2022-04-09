@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/Guida.css";
 import Bounce from "react-reveal/Bounce";
+import { Link } from "react-router-dom";
 const Guida = (props) => {
   const capitoli = props.capitoli;
   const prova = props.prova;
@@ -8,7 +9,9 @@ const Guida = (props) => {
     <div className="guida-container">
       <div className="guida-wrapper">
           <div className="guida-articolo-container">
-            <a href="/come-iniziare">Come Iniziare</a>
+            <Link to={"/come-iniziare"}>
+              Come Iniziare
+            </Link>
           </div>
           <div className="guida-articolo-container">
             <a href="">Token</a>
