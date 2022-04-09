@@ -21,7 +21,8 @@
 
 @media screen and (max-width: 428px) {
     .container{
-        width: 100%;
+        width: 280px;
+        height: 61px;
     }
     .container h3{
         padding: 10px;
