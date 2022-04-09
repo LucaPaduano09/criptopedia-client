@@ -127,19 +127,7 @@
   letter-spacing: 5px;
   font-size: 9vw;
 }
-#hamb-menu-link::before{
-  content: attr(data-text);
-  position: absolute;
-  color: white;
-  width: 0%;
-  overflow-x: hidden;
-  transition: 1s;
-  border-right: 8px solid white;
-}
-#hamb-menu-link:hover::before{
-  width: 100%;
-  -webkit-text-stroke: 1px #fff;
-}
+
 /* Tablets */
 @media screen and (max-width:820px) {
   .header-container{
