@@ -19,7 +19,6 @@ import AdminMessages from "./components/admin/AdminMessages"
 import AdminSingleMessage from "./components/admin/AdminSingleMessage";
 import GuruLogin from "./components/Guru/GuruLogin";
 import GuruChat from "./components/Guru/GuruChat";
-
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import GuidaPage from "./components/Guida/GuidaPage";
 function App() {
@@ -138,7 +137,7 @@ function App() {
                crypto.com è un exchange sicuramente molto piu user friendly rispetto ai suoi competitor, per questo per i principianti e' molto piu consigliato rispetto a gli altri .
               
               -KUCOIN:
-              
+
                kucoin e' un exchange con una vasta scelta di crypto valute , anch'esso ha il suo token ma e' un po' piu complesso da usare poiche' per ogni tipologia di operazione si deve usare un wallet all'interno del suo exchange.
                esempio : per lo staking si utilizza il wallet principale , per acquistare o vendere crypto c'e' l'account trading che prima deve essere caricato di usdt dall account principale e cosi via.
               

@@ -54,7 +54,9 @@ const Header = () => {
           <h1 id="hamb-menu-link" data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</h1>
           </Link>
           <h1 id="hamb-menu-link" data-text="&nbsp;Notizie&nbsp;">&nbsp;Notizie&nbsp;</h1>
+          <Link to="/guida" onClick={() => setShow(false)}>
           <h1 id="hamb-menu-link" data-text="&nbsp;Guida&nbsp;">&nbsp;Guida&nbsp;</h1>
+          </Link>
           <Link to="/cryptos" onClick={() => setShow(false)}>
             <h1 id="hamb-menu-link" data-text="&nbsp;Cryptos&nbsp;">&nbsp;Cryptos&nbsp;</h1>
           </Link>
