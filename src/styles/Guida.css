@@ -41,6 +41,7 @@
     font-size: 24px;
     text-transform: uppercase;
 }
+
 @media screen and (max-width: 428px) {
     .guida-container{
         height: unset;
@@ -51,6 +52,9 @@
         grid-template-columns: 1fr;
         row-gap: 10px;
         padding: 20px;
+    }
+    .guida-articolo-container{
+        width: 90%;
     }
     .guida-articolo-container a{
         font-size: 20px;
