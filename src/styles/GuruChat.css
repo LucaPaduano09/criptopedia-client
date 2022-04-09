@@ -1,0 +1,51 @@
+.guru-chat-container{
+    height: 70vh;
+    width: 40vw;
+    background-color: rgb(21, 31, 41);
+    margin: 0 auto;
+    margin-top: 130px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.guru-chat-wrapper{
+    position: relative;
+    height: 62vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #c667c4, #a983e3, #869bf5, #64affc, #51c0f9);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guru-chat-inner-contaner{
+    position: relative;
+    height: 98%;
+    width: 98%;
+    background-color: rgb(75, 73, 73);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+.guru-chat-input{
+    position: relative;
+    height: 8vh;
+    width: 100%;
+    background-color: white;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.guru-chat-input > input{
+    position: relative;
+    height: 30px;
+    width: 65%;
+    border-radius: 30px;
+    text-align: center;
+}

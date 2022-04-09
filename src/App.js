@@ -17,7 +17,8 @@ import CryptoAdd from "./components/admin/CryptoAdd";
 import ScrollToTop from "./components/ScrollToTop";
 import AdminMessages from "./components/admin/AdminMessages"
 import AdminSingleMessage from "./components/admin/AdminSingleMessage";
-import GuruHome from "./components/Guru/GuruHome";
+import GuruLogin from "./components/Guru/GuruLogin";
+import GuruChat from "./components/Guru/GuruChat";
 
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 function App() {
@@ -51,9 +52,13 @@ function App() {
             <Guida />
             <Footer />
           </Route>
-          <Route path={"/chiedi-al-guru"}>
+          <Route path={"/guru-login"}>
             <Header />
-            <GuruHome />
+            <GuruLogin />
+          </Route>
+          <Route path={"/guru-chat"}>
+            <Header />
+            <GuruChat />
           </Route>
           <Route path={"/admin"}>
             <Admin />

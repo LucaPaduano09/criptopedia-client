@@ -266,9 +266,6 @@
     .footer-imgBackground > img{
         margin-top: -75px;
     }
-    .footer-items{
-
-    }
 }
 /* iPhone 13 Pro Max and iPhone 12 Pro Max */
 @media only screen and (device-width: 428px) and (device-height: 926px) {

@@ -52,6 +52,9 @@
     margin-bottom: 50px;
     margin-top: 30px;
 }
+.single-crypto-link:hover{
+    background: transparent;
+}
 .single-crypto-link > a {
     text-decoration: none;
     color: white;

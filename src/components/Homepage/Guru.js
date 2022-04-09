@@ -27,7 +27,7 @@ const Guru = () => {
             maggiori informazioni sul progetto, prospettiva o momento migliore
             per acquistarla, inizia una chat con il nostro Guru.
           </p>
-          <Link className="lng"to="chiedi-al-guru" style={{textDecoration:"none"}}>
+          <Link className="lng"to="guru-login" style={{textDecoration:"none"}}>
             <button className="guru-button">Chiedi al Guru</button>
           </Link>
         </div>

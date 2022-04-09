@@ -1,0 +1,98 @@
+.guru-home-container {
+  height: calc(100vh - 70px);
+  width: 100vw;
+  background-color: rgb(10,21,31);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 70px;
+}
+.guru-home-container > h1 {
+  font-size: 2.5vw;
+  font-weight: 400;
+  color: white;
+  margin-top: 80px;
+}
+.guru-home-container > p {
+  font-size: 1.2vw;
+  margin-top: -20px;
+  font-weight: 100;
+  color: white;
+}
+.guru-form-container {
+  height: 60vh;
+  width: 30vw;
+  background-color: rgba(20, 31, 41, 0.301);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.guru-form-container > label {
+  font-size: 1.3vw;
+  font-weight: 100;
+  color: white;
+}
+.guru-form-container > input {
+  height: 25px;
+  width: 300px;
+  border-radius: 30px;
+  border: 1px solid black;
+  text-align: center;
+}
+.guru-form-container > input:hover{
+  background:transparent;
+  color: white;
+  border: 1px solid white;
+}
+.guru-form-container > button {
+  height: 30px;
+  width: 300px;
+  border-radius: 30px;
+  border: 1px solid white;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #c667c4, #a983e3, #869bf5, #64affc, #51c0f9);
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+.guru-form-container > button:hover {
+  background: transparent;
+}
+.guru-form-container > a{
+  margin: 0px;
+  height: 30px;
+}
+.guru-login-error-container{
+  position: relative;
+  height: 40px;
+  width: 60%;
+  border: 2px solid rgb(138, 4, 4);
+  background-color: rgb(243, 71, 71);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.guru-animation-container{
+  position: relative;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.first-animation{
+  position: relative;
+  height: 95%;
+  width: 15%;
+}
+.second-animation{
+  position: relative;
+  height: 100%;
+  width: 20%;
+  margin-right: 30px;
+}

@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <div className="header-menu">
         <Link to="/">
-          <li className="header-menu-option">Home</li>
+          <li className="header-menu-option">CASA</li>
         </Link>
         <Link to="/">
           <li className="header-menu-option">Notizie</li>
@@ -51,14 +51,14 @@ const Header = () => {
             <img src="/close.png" alt="close-button"/>
           </button>
           <Link to="/" onClick={() => setShow(false)}>
-          <h1>Home</h1>
+          <h1 id="hamb-menu-link" data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</h1>
           </Link>
-          <h1>Notizie</h1>
-          <h1>Guida</h1>
+          <h1 id="hamb-menu-link" data-text="&nbsp;Notizie&nbsp;">&nbsp;Notizie&nbsp;</h1>
+          <h1 id="hamb-menu-link" data-text="&nbsp;Guida&nbsp;">&nbsp;Guida&nbsp;</h1>
           <Link to="/cryptos" onClick={() => setShow(false)}>
-            <h1>Cryptos</h1>
+            <h1 id="hamb-menu-link" data-text="&nbsp;Cryptos&nbsp;">&nbsp;Cryptos&nbsp;</h1>
           </Link>
-          <h1>NFT</h1>
+          <h1 id="hamb-menu-link" data-text="&nbsp;Nft&nbsp;">&nbsp;NFT&nbsp;</h1>
           {console.log("aperto")}
         </div>
         </Slide>
