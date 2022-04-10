@@ -8,11 +8,13 @@ body {
   background-color: rgb(10, 21, 31);
   box-sizing: border-box;
   /* overflow-x: hidden; */
+  overflow: visible;
 }
 html{
   margin: 0;
   border: 0;
   width: 100vw;
+  overflow: visible;
 }
 
 code {

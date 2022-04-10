@@ -9,30 +9,40 @@ const Guida = (props) => {
   return (
     <div className="guida-container">
       <div className="guida-wrapper">
-        <Bounce>
           <div className="guida-articolo-container"style={{backgroundImage:`url("../../public/capitolo1.jpg")`}}>
             <Link to={"/come-iniziare"}>
               Come Iniziare
             </Link>
           </div>
-        </Bounce>
           <div className="guida-articolo-container">
-            <a href="">Token</a>
+          <Link to={"/token"}>
+              Token
+            </Link>
           </div>
           <div className="guida-articolo-container">
-            <a href="">Blockchain</a>
+          <Link to={"/blockchain"}>
+              Blockchain
+            </Link>
           </div>
           <div className="guida-articolo-container">
-            <a href="">Wallet</a>
+          <Link to={"/wallet"}>
+              Wallet
+            </Link>
           </div>
           <div className="guida-articolo-container">
-            <a href="">Holding & Trading</a>
+          <Link to={"/holding-trading"}>
+              Holding & Trading
+            </Link>
           </div>
           <div className="guida-articolo-container">
-            <a href="">Scegliere dove investire</a>
+          <Link to={"/scegliere-dove-investire"}>
+              Scegliere Dove Investire
+            </Link>
           </div>
           <div className="guida-articolo-container">
-            <a href="">Take Profit Stop Loss</a>
+          <Link to={"/take-profit-stop-loss"}>
+              Take Profit & Stop Loss
+            </Link>
           </div>
           <div className="guida-articolo-container">
             <a href="">Supporti e resitenze</a>

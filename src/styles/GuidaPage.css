@@ -18,6 +18,11 @@
     white-space: pre-line;
     text-align: left;
 }
+.container img{
+    position: relative;
+    width: 105%;
+    max-height: 600px;
+}
 
 @media screen and (max-width: 428px) {
     .container{
@@ -39,5 +44,12 @@
         margin-bottom: -23px;
         font-weight: 500;
         margin-top: 40px;
+    }
+    .container img{
+        min-height: 100px;
+        height: 250px;
+        width: 100%;
+        margin-top: 20px;
+        overflow-x: visible;
     }
 }
