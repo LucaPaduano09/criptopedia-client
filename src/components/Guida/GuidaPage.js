@@ -6,7 +6,7 @@ const GuidaPage = (props) => {
   return (
     <div className='container'>
         <h1>{titolo}</h1>
-        <h3>{contenuto}</h3>
+        <h3 dangerouslySetInnerHTML={{__html:contenuto}}/>
     </div>
   )
 }
