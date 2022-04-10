@@ -248,6 +248,7 @@ function App() {
               titolo="Wallet"
               contenuto={`
               <h2>4. Cos'è un wallet</h2>
+
               Per comprendere cos’è un wallet per criptovalute si deve considerare che queste  monete non sono stampante da un ente, prevedendo una forma fisica, ma sono generate  attraverso un particolare processo che si sviluppa completamente in rete e che  utilizza una tecnologia innovativa come la blockchain.
               I wallet sono dispositivi che permettono di conservare le proprie criptovalute  
               Ogni portafoglio elettronico avrà un proprio indirizzo composto da lettere e numeri.  Questo servirà a ricevere denaro, proprio come l’IBAN di cui tutti dispongono.  L’indirizzo avrà una lettera iniziale differente in base alla criptovaluta di  riferimento.
@@ -292,6 +293,7 @@ function App() {
               titolo="Holding & Trading"
               contenuto={`
               <h2>5.1 differenze tra trading e hodling</h2>
+
                Premettiamo che l'analisi tecnica e l'analisi fondamentale sono delle analisi per cercare  di capire quando entrare  e quando uscire da un mercato finanziario.
                Sono quindi strumenti speculativi , per il trading e dunque non sono tanto utili per  il lungo periodo , che è quello a cui si dovrebbe credere nel mercato delle  cryptovalute.
                Trading è quindi esattamente l'opposto dell''hodling', infatti la parola “Hodl”  significa essenzialmente “tenere” o “conservare”, ed è spesso usato come sinonimo di  “mantenere” qualcosa, o semplicemente come versione abbreviata di “tenere” o  “conservare” appunto, e quindi il metodo di investimento che piu si addice a chi crede  in questo mondo e non cerca solo speculazione.
@@ -389,6 +391,7 @@ function App() {
               
               
               <h2>CONCLUSIONI</h2>
+              
               bisogna capire il reale valore del token,evitare i token mossi solo da speculazione .
               ricordare che le ICO e pre sale sono scommesse poichè sono progetti nuovi che non hanno ancora uno storico valutabile , e che bisogna segliere con cura le alt coin poichè le buone e quelle di successo sono poche .
               
@@ -407,16 +410,23 @@ function App() {
               Come abbiamo già avuto modo di parlare e condividere nel corso di alcuni precedenti appuntamenti con  questa guida , uno dei più importanti concetti che è fondamentale conoscere quando si avvia la propria personale percorso nel mondo crypto è rappresentato dall’opportuna gestione del denaro. Fondamentale è capire cos’è lo stop loss e  cos’è il take profit e quali sono le loro definizioni.
              
              <h2>7.1 STOP LOSS </h2>
-             
+
              Lo stop loss è probabilmente il migliore amico del trader, ripeto trading poichè per chi hodla l'unico strumento importante oltre alla pazienza è il take profit che ci porta ai nostri obbiettivi prestabiliti e desiderati.
              Il significato dello stop loss è letteralmente in italiano “fermare la perdita”, ciò ci aiuta a capire come veramente sia uno strumento utile per tutti i trader.
              Lo stop loss è una funzione disponibile su praticamente ogni piattaforma di trading, che può essere impostata o meno per ogni operazione.
+
              lo stop loss serve a proteggere un investimento riducendo il livello di rischio. In pratica, si tratta di un livello di prezzo impostato dopo aver aperto la propria operazione. Se tale livello viene raggiunto mentre la posizione è aperta, allora la piattaforma di trading si occuperà di chiudere la tua posizione in automatico.
-             Ovviamente questo livello di prezzo impostato per lo stop loss viene scelto nella direzione opposta dove dovrebbe muoversi il prezzo. Ovvero:             
-             Se apri una posizione long (rialzista), lo fai perché credi che vi sarà un rialzo nel prezzo di un asset. Perciò imposterai lo stop loss nella direzione opposta, per proteggerti dall’eventualità che invece accada un ribasso nel prezzo
-             Se apri una posizione short (ribassista), lo fai perché credi che vi sarà un ribasso nel prezzo di un asset. Perciò imposterai lo stop loss nella direzione opposta, per proteggerti dall’eventualità che invece accada un rialzo nel prezzo.             
+             Ovviamente questo livello di prezzo impostato per lo stop loss viene scelto nella direzione opposta dove dovrebbe muoversi il prezzo. 
+             Ovvero:  
+
+             Se apri una posizione long (rialzista), lo fai perché credi che vi sarà un rialzo nel prezzo di un asset. Perciò imposterai lo stop loss nella direzione opposta, per proteggerti dall’eventualità che invece accada un ribasso nel prezzo.
+
+             Se apri una posizione short (ribassista), lo fai perché credi che vi sarà un ribasso nel prezzo di un asset. Perciò imposterai lo stop loss nella direzione opposta, per proteggerti dall’eventualità che invece accada un rialzo nel prezzo.     
+
              Insomma, lo stop loss viene usato per limitare le perdite nel caso che il prezzo si muova nella direzione opposta a quella prevista. Non solo, se lo stop loss viene raggiunto sarà proprio la piattaforma di trading a chiudere l’operazione in automatico: un’altra sicurezza in più, in caso non ci si trovi davanti al computer.             
-             Il vantaggio principale di avere uno stop loss è quello di poter calcolare in anticipo, seguendo una propria strategia di trading, la cifra massima che si è disposti a perdere sul proprio investimento. Senza stop loss si rischierebbe di cadere vittima delle proprie emozioni: magari si vede la propria operazione in perdita, però si continua a tenerla aperta pensando (e sperando) che prima o poi il prezzo tornerà a salire.
+             Il vantaggio principale di avere uno stop loss è quello di poter calcolare in anticipo, seguendo una propria strategia di trading, la cifra massima che si è disposti a perdere sul proprio investimento.
+             
+             Senza stop loss si rischierebbe di cadere vittima delle proprie emozioni: magari si vede la propria operazione in perdita, però si continua a tenerla aperta pensando (e sperando) che prima o poi il prezzo tornerà a salire.
              Non puoi immaginare quanti trader hanno bruciato migliaia e migliaia di euro in questo modo, decidendo di tenere aperte posizioni in perdita. Se in quei casi avessero impostato uno stop loss, avrebbero evitato di perdere molto denaro.
              
              <h2>7.2 TAKE PROFIT</h2>
@@ -424,32 +434,44 @@ function App() {
              Ora che abbiamo capito cos’è lo stop loss, bisogna passare al concetto successivo e capire come funziona il take profit. Anche il take profit è disponibile su ogni piattaforma di trading, e lo puoi impostare ogni volta che apri un’operazione. Ovviamente è consigliato per chi fa TRADING  impostare sempre sia lo stop loss sia il take profit.
              Se lo stop loss serve a proteggere un investimento da un’eventuale perdita, il take profit serve ad assicurare dei profitti al trader. Si tratta infatti di un livello di prezzo che viene impostato nella direzione in cui si è previsto che si muoverà il prezzo. Proprio come avviene con lo stop loss, se il livello di take profit viene raggiunto mentre la posizione è aperta, allora la piattaforma di trading si occuperà di chiudere la tua posizione in automatico.
              Il significato di take profit in italiano può essere definito con “prendere il profitto“.
+
              Se apri una posizione long (rialzista), lo fai perché credi che vi sarà un rialzo nel prezzo di un asset. Perciò imposterai il take profit nella direzione prevista, per assicurarti i potenziali profitti
              Se apri una posizione short (ribassista), lo fai perché credi che vi sarà un ribasso nel prezzo di un asset. Perciò imposterai il take profit nella direzione prevista, per assicurarti i potenziali profitti
              Per comprendere al meglio il take profit bisogna però spiegare il concetto di “assicurarsi i profitti”. Può suonare strano infatti, e viene lecito domandarsi “Perché dovrai mettere un limite ai miei potenziali guadagni?”.
-             Il motivo dietro il take profit è lo stesso che c’è dietro lo stop loss. Anche il livello di take profit è un livello che calcoli in anticipo, seguendo la tua strategia di trading. Equivale alla cifra che sei disposto a guadagnare per la tua operazione e con la quale ti ritieni soddisfatto.
+             Il motivo dietro il take profit è lo stesso che c’è dietro lo stop loss.
+             
+             Anche il livello di take profit è un livello che calcoli in anticipo, seguendo la tua strategia di trading. Equivale alla cifra che sei disposto a guadagnare per la tua operazione e con la quale ti ritieni soddisfatto.
              Sapere questa cifra, così come sapere quella che saresti disposto a perdere, ti permetterà di impostare stop loss e take profit correttamente. Grazie a questi due strumenti potrai infatti tenere sotto controllo i tuoi potenziali guadagni e perdite previste, e gestire così al meglio il tuo capitale anche nel lungo termine.             
              Inoltre “assicurarsi i profitti” non è così facile come sembra. La prima cosa che uno si sente di fare quando si ritrova con un’operazione aperta ed in guadagno, è quello di “lasciarla correre”, senza porre limiti ai potenziali profitti. Ma cosa succede se dopo poco i prezzi cambiano direzione?            
              Probabilmente si sarà tentati di aspettare finché i prezzi non tornino almeno ai livelli precedenti, quando avevamo deciso di lasciar correre la nostra operazione. E se i prezzi non tornano mai a quei livelli ma anzi, cambiano direzione e si muovono nella direzione opposta causandoci una perdita?             
+             
              Come puoi ben vedere, avere un livello di take profit ci solleva da tutti questi dubbi e problemi. È sempre meglio calcolare a mente lucida i livelli di stop loss e take profit, per poi evitare di incorrere in spiacevoli situazioni come quella mostrata qui sopra.
                          
              <h2>7.3 COME E PERCHè USARE STOP LOSS E TAKE PROFIT</h2>
                          
              Prima di andare a discutere su come impostare gli stop loss e come impostare i take profit è bene soffermarsi un attimo sui potenziali rischi dovuti da uno scorretto utilizzo di questi due strumenti. Già, perché se da una parte possono essere di grande aiuto nel limitare le perdite e gestire al meglio il proprio capitale, dall’altra nascondono comunque dei rischi.             
+             
              Come hai visto, sia gli stop loss, sia i take profit, sono livelli di prezzo che se raggiunti portano la piattaforma di trading a chiudere in automatico la tua operazione. In un caso per evitare ulteriori perdite, nell’altro per assicurarti dei profitti.             
              Il rischio principale quando si utilizzano questi due strumenti è quello di scegliere male i livelli di prezzo a cui impostarli. Per esempio, se si sbaglia l’impostazione dello stop loss è possibile che i prezzi, durante le loro normali oscillazioni, raggiungano questo livello portando alla chiusura automatica delle proprie operazioni.            
-             Esempio. Immaginiamo di avere investito al rialzo, ed aver impostato quindi lo stop loss per proteggerci da un ribasso. Peccato che abbiamo scelto un livello troppo vicino all’andamento attuale dei prezzi, che con delle normali oscillazioni toccano il nostro livello di stop loss facendo chiudere in automatico l’operazione.            
+             Esempio. 
+             
+             Immaginiamo di avere investito al rialzo, ed aver impostato quindi lo stop loss per proteggerci da un ribasso. Peccato che abbiamo scelto un livello troppo vicino all’andamento attuale dei prezzi, che con delle normali oscillazioni toccano il nostro livello di stop loss facendo chiudere in automatico l’operazione.            
              Ma come detto, si trattava di normali oscillazioni. Infatti, poco dopo il prezzo comincia a salire ed ecco qua che ci siamo giocati dei potenziali profitti. Bisogna quindi evitare di posizione i propri stop loss troppo vicino all’andamento dei prezzi attuale, e bisogna quindi studiarsi i movimenti passati per capire il livello migliore a cui posizionarli.          
              Anche perché altrimenti si rischia di cadere nell’errore opposto, ovvero posizionare lo stop loss troppo lontano. Ciò significa che ci espone al rischio di subire maggiori perdite. È importante quindi trovare il giusto equilibrio, studiando proprio i grafici e analizzando i movimenti passati, ma anche livelli di minimi e massimi toccati dai prezzi.           
-             Anche lo strumento del take profit non è esente da rischi. Il take profit viene usato per assicurarsi dei profitti, e come abbiamo visto nel paragrafo precedente, sollevarci da molti potenziali dubbi e decisioni dettate dalle emozioni. Però anche in questo caso esiste sempre la possibilità di sbagliare.
+             Anche lo strumento del take profit non è esente da rischi. 
+             
+             Il take profit viene usato per assicurarsi dei profitti, e come abbiamo visto nel paragrafo precedente, sollevarci da molti potenziali dubbi e decisioni dettate dalle emozioni. Però anche in questo caso esiste sempre la possibilità di sbagliare.
              Anche in questo caso, gli errori possono capitare quando si imposta il livello di take profit troppo vicino oppure troppo lontano dall’andamento attuale dei prezzi.
              Nel primo caso, si rischia di “tagliare” fuori molti potenziali profitti. Immaginiamo di aver investito al rialzo, i prezzi salgono però toccano subito il nostro livello take profit: bene, operazione chiusa in automatico dalla piattaforma di trading e dei guadagni assicurati per noi.
              Peccato però che i prezzi continuano a salire, e anche di molto, facendoci quindi perdere dei profitti ottimi. Il problema quando si imposta un livello come il take profit, è che spesso entra in gioco il fattore “avidità“, dato che bisogno trovare un limite a dei guadagni (quando in realtà piacerebbe a tutti guadagnare senza limiti )
              Se si pone il limite troppo vicino, si rischia di avere l’effetto opposto a quello sperato. Così potrebbe venire spontaneo dire “ma allora mi conviene metterlo molto più lontano questo Take Profit”, pensando così di aumentare i propri profitti nelle future operazioni. 
-             Ma anche in questo caso si farebbero solo danni. Un livello di take profit troppo distante potrebbe non essere mai raggiunto, ciò significa che bisognerà chiudere l’operazione manualmente e quindi ci si esporrà alla fatidica domanda: “di quanto guadagno mi accontento?”. Quando in realtà è bene decidere tutto già a tavolino prima di aprire le proprie operazioni.
+             Ma anche in questo caso si farebbero solo danni. 
+             
+             Un livello di take profit troppo distante potrebbe non essere mai raggiunto, ciò significa che bisognerà chiudere l’operazione manualmente e quindi ci si esporrà alla fatidica domanda: “di quanto guadagno mi accontento?”. Quando in realtà è bene decidere tutto già a tavolino prima di aprire le proprie operazioni.
              Insomma, anche con il livello di Take Profit bisogna trovare il giusto equilibrio per evitare di commettere gli errori esposti qui sopra. Studiate sempre i grafici e i movimenti dei prezzi: solo così sarete in grado di trovare il livello giusto a cui impostare un livello di take profit.
              Una delle cose più difficili da fare quando si aprono nuove posizioni è determinare dove mettere l’ordine di stop loss.
              Ovviamente, individuare tali livelli con precisione non è affatto facile. Un primo spunto di condivisione che vogliamo però fornirvi è legato al fatto che quando andrete a impostare uno stop loss, vi sarà richiesta una ferrea disciplina, evitando di modificare il limite se le cose non stanno andando benissimo. Ad esempio, se avete inserito una posizione di acquisto, long, e il prezzo inizia a diminuire, non dovreste ovviamente abbassare il livello di stop loss nel tentativo di dare il tempo di mercato di recuperare, ottenendo un’esposizione al rischio più elevata di quanto avevate invece avuto modo di definire. Insomma, evitate che le vostre emozioni superino quanto predefinito, lasciando invariati gli ordini di stop loss in qualsiasi circostanza.
+
              Gli stop loss sono essenziali per qualsiasi buona riuscita della propria strategia e, soprattutto, per limitare i rischi di cui i trader neofiti non hanno ancora una piena consapevolezza.
              Non solo: oltre a consentire di ridurre al minimo le perdite, e rimanere pertanto sui mercati finanziari il più a lungo possibile con posizioni sostenibili, gli stop loss vi permetteranno di raggiungere un obiettivo indiscutibilmente importante: ridurre il livello di stress che il trading si porta dietro.
              Risulta infatti ben intuibile che mantenere una posizione di perdita senza una adeguata protezione sia in grado di aumentare significativamente il livello di stress, conducendo così il trader a pensieri irrazionali, soprattutto quando si tratta di un investitore non troppo esperto. Più il prezzo va in senso opposto rispetto a quanto desiderato, e più lo stress avrà modo di aumentare, fino ad arrivare a dominare la mente del trader.
