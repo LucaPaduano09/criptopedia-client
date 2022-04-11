@@ -3,6 +3,7 @@ import "../../styles/Crypto.css";
 import Bounce from "react-reveal";
 import Lottie from "react-lottie";
 import Animazione from "./crypto.json";
+import { Link } from "react-router-dom";
 const Crypto = () => {
   const defaultOptions = {
     loop: true,
@@ -21,7 +22,9 @@ const Crypto = () => {
           <p>
             Criptopedia pubblichera' ogni settimana una lista di crypto compresa tra i 4 e gli 8 token che reputa interessanti, con previsioni, grafici e statistiche. Troverai anche un elenco di tutte le crypto listate su Criptopedia!
           </p>
-          <button className="esplora-button">Esplora</button>
+          <Link to="/cryptos">
+            <button className="esplora-button">Esplora</button>
+          </Link>
         </div>
       </Bounce>
       <Bounce right>

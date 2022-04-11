@@ -25,13 +25,13 @@ const Home = () => {
               termini che ti suonano nuovi? Non preoccuparti sei nel posto
               giusto! Lo scopo di Criptopedia e' quello di aiutare quante piu'
               persone possibilie ad avvicinarsi al crescente mondo delle crypto.
-              Troverai tutto cio di cui hai bisogno, sia se sei alle prime
-              armi, sia se sei un esperto. Grazie al nostro sistema di guida e
-              consulenza sarai seguito nella tua avventura.
+              Troverai tutto cio di cui hai bisogno, grazie al nostro sistema di guida e
+              consulenza sarai seguito nella tua avventura e con le notizie 
+              non perderai neanche un aggiornamento sulle crypto.
             </p>
           </div>
           <div className="home-button-container"style={{position:"relative",width:"100%", display:"flex", alignItems:"center"}}>
-            <button className="home-button-learn">Scopri di piu</button>
+            <button className="home-button-learn">Vai Alle Notizie</button>
           </div>
         </div>
       </Bounce>

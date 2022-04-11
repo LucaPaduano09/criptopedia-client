@@ -107,6 +107,19 @@
 }
 .filter-container > button{
   margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    #c667c4,
+    #a983e3,
+    #869bf5,
+    #64affc,
+    #51c0f9
+  );
+  color: white;
+  width: 50px;
+  height: 20px;
 }
 /* Huawei p20 */
 @media only screen and (max-width:360px) and (max-height:780px){

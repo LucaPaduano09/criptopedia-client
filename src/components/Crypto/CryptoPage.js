@@ -134,7 +134,7 @@ export default function ProductList() {
       )}
 
       <div className="filter-container">
-        <button onClick={handleClick}>1</button>
+        <button onClick={handleClick} style={{marginLeft:"10px"}}>1</button>
         <button onClick={handleClick2}>2</button>
       </div>
     </div>
