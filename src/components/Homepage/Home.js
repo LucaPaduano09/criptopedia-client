@@ -23,8 +23,7 @@ const Home = () => {
             <p className="home-desc">
               Assets, Blockchain, Token, NFT, sono tutti
               termini che ti suonano nuovi? Non preoccuparti sei nel posto
-              giusto! Lo scopo di Criptopedia e' quello di aiutare quante piu'
-              persone possibilie ad avvicinarsi al crescente mondo delle crypto.
+              giusto! Lo scopo di Criptopedia e' quello di aiutare le persone ad avvicinarsi al mondo delle crypto.
               Troverai tutto cio di cui hai bisogno, grazie al nostro sistema di guida e
               consulenza sarai seguito nella tua avventura e con le notizie 
               non perderai neanche un aggiornamento sulle crypto.
