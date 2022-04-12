@@ -30,10 +30,11 @@
         /* height: 61px; */
     }
     .container h3{
-        padding: 10px;
-        font-size: 15px;
-        font-weight: 400;
+        padding: 12px;
+        font-size: 20px;
+        font-weight: 300;
         margin-bottom: 50px;
+        line-height: 40px;
     }
     .container h1{
         font-size: 40px;
@@ -41,7 +42,7 @@
     }
     .container h2{
         font-size: 25px;
-        margin-bottom: -23px;
+        margin-bottom: -60px;
         font-weight: 500;
         margin-top: 40px;
     }

@@ -3,7 +3,7 @@
     background-color: rgb(10, 21, 31);
     margin-top: 100px;
     display: flex;
-    overflow: none;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
 }
@@ -86,7 +86,7 @@
     background-size: contain;
 }
 
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     .home-container{
         display: flex;
         align-items: center;
@@ -141,53 +141,10 @@
     .home-button-container{
         justify-content: center;
     }
-}
+} */
 
-/* Mobile L */
-@media screen and (max-width: 425px) {
-    .home-container{
-        height: 100vh;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .home-imgBackground{
-        height: 32vh;
-        width: 100vw;
-        margin-bottom: 10px;
-        margin-left: 50px;
-        margin-top: 80px;
-    }
-    .home-first{
-        height: 60vh;
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .home-title{
-        margin-bottom: 0px;
-        font-size: 6vw;
-    }
-    .home-title1{
-        font-size: 8vw;
-    }
-    .home-desc{
-        font-size: 4.5vw;
-        margin-bottom: 10px;
-        height: 29vh;
-        margin-top: 10px;
-    }
-    .home-button-learn{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: -15px;
-        height: 30px;
-        width: 80vw;
-        font-size: 5vw;
-    }
-}
 /* Mobile M */
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
     .home-container{
         height: 100vh;
     }
@@ -238,7 +195,55 @@
         width: 100vw;
         margin-bottom: 10px;
     }
-} 
+}  */
+/* Mobile L */
+@media screen and (max-width: 428px) {
+    .home-container{
+        height: 100vh;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        /* background-color: rebeccapurple; */
+        justify-content: space-evenly;
+    }
+    .home-imgBackground{
+        height: 32vh;
+        width: 100vw;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+    .home-first{
+        /* height: 100vh; */
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .home-title{
+        margin-bottom: 0px;
+        font-size: 6vw;
+    }
+    .home-title1{
+        margin-top: 40px;
+        font-size: 8vw;
+    }
+    .home-desc{
+        font-size: 4.5vw;
+        /* margin-bottom: 10px; */
+        /* height: 29vh; */
+        margin-top: 10px;
+    }
+    .home-button-learn{
+        /* margin-top: -100px; */
+        margin-left: 10px;
+        height: 30px;
+        width: 80vw;
+        font-size: 5vw;
+        /* z-index: 100; */
+    }
+}
 /* iphone 6/7/8 */
 @media only screen and (device-width:375px) and (device-height:667px) {
     .home-container{
@@ -277,11 +282,12 @@
     }
 }
 /* iPhone 13, iPhone 12 and iPhone 12 Pro */
-@media only screen 
+/* @media only screen 
     and (device-width: 390px) 
     and (device-height: 844px) { 
         .home-container{
             height: 100vh;
+            background-color: red;
         }
         .home-info{
             display: flex;
@@ -289,13 +295,13 @@
             justify-content: space-evenly;
         }
         .home-first{
-            height: 70vh;
+            height: 100vh;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
         }
         .home-button-learn{
-            margin-top: 10px;
+            margin-top: 0px;
             margin-bottom: -0px;
             margin-left: 20px;
             height: 30px;
@@ -324,7 +330,7 @@
         .home-title1{
             padding-left: 10px;
         }
-    }
+    } */
 
 /* iPhone 13 Pro Max and iPhone 12 Pro Max */
 @media only screen 
