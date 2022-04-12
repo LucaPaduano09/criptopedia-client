@@ -241,6 +241,7 @@
         height: 30px;
         width: 80vw;
         font-size: 5vw;
+        margin-bottom: 20px;
         /* z-index: 100; */
     }
 }

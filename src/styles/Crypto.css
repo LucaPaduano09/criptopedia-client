@@ -117,7 +117,7 @@
   background: transparent;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .crypto-container {
     height: 155vh;
     width: 100vw;
@@ -125,6 +125,7 @@
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 40px;
+    margin-top: 20px;
   }
   .crypto-imgBackground {
     width: 90vw;
@@ -168,30 +169,66 @@
       margin-bottom: 20px;
       margin-top: 70px;
   }
-}
+} */
 
 /* Mobile L */
-@media screen and (max-width:425px){
-  .crypto-container{
+@media screen and (max-width: 428px){
+  .crypto-container {
     height: 100vh;
-    margin-bottom: 0px;
+    width: 100vw;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    margin-top: 20px;
   }
-  .esplora-button{
-    height: 30px;
-    margin-left: 0px;
+  .crypto-imgBackground {
+    width: 90vw;
+    height: 50vh;
+    margin-left: 100px;
   }
-  .crypto-container > div > p {
-    margin-bottom: 0px;
+  .crypto-container > .crypto-info {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+  }
+  .crypto-info > .crypto-titolo {
+    font-size: 8.4vw;
+    position: relative;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .crypto-container > .crypto-info > p {
+    position: relative;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
     font-size: 4.5vw;
+    height: 33%;
+    margin-top: 13px;
+  }
+  .crypto-container > .crypto-info > img{
+      top: 13%;
+      right: 5%;
   }
   .esplora-button{
-    margin-top: 40px;
-    margin-bottom: 0px;
+      height: 30px;
+      font-size: 5vw;
+      width: 80vw;
+      margin-bottom: 20px;
+      margin-top: 20px;
   }
 }
 
 /* iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X  MOBILE M*/
-@media screen and (max-width:375px) {
+/* @media screen and (max-width:375px) {
   .crypto-container{
     height: 100vh;
   }
@@ -238,9 +275,9 @@
       margin-top: 50px;
       margin-left: 2px;
   }
-}
+} */
 /* iPhone 6 / 7 / 8 */
-@media screen and (device-width:375px) and (device-height:667px){
+/* @media screen and (device-width:375px) and (device-height:667px){
   .esplora-button{
     height: 30px;
     margin-left: 0px;
@@ -254,15 +291,16 @@
     margin-bottom: 20px;
     margin-top: 20px;
   }
-}
+} */
 
 /* iPhone 13, iPhone 12 and iPhone 12 Pro */
-@media only screen 
+/* @media only screen 
     and (device-width: 390px) 
     and (device-height: 844px) {
       .crypto-imgBackground{
         height: 55vh;
         width: 100vw;
+        margin-top: 20px;
       }
       .crypto-container > .crypto-info{
         height: 50vh;
@@ -270,13 +308,14 @@
       .crypto-container{
         height: 100vh;
       }
-}
+} */
 
 /* iPhone 13 Pro Max and iPhone 12 Pro Max */
-@media only screen and (device-width: 428px) and (device-height: 926px) {
+/* @media only screen and (device-width: 428px) and (device-height: 926px) {
   .crypto-container{
     height: 100vh;
     margin-left: 0px;
+    margin-top: 20px;
   }
   .crypto-imgBackground{
     height: 45vh;
@@ -295,4 +334,4 @@
     margin-left: 0px;
     height: 40px;
   }
-}
+} */
