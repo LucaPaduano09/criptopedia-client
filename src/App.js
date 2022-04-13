@@ -21,6 +21,7 @@ import GuruLogin from "./components/Guru/GuruLogin";
 import GuruChat from "./components/Guru/GuruChat";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import GuidaPage from "./components/Guida/GuidaPage";
+import NewsHome from "./components/News/NewsHome";
 function App() {
   return (
     <Router>
@@ -507,6 +508,11 @@ function App() {
           <Route path={"/cryptos-add"}>
             <Sidebar />
             <CryptoAdd />
+          </Route>
+          <Route path={"/news"}>
+            <Header />
+            <NewsHome />
+            <Footer />
           </Route>
           <Route path={"/"}>
             <Header />
