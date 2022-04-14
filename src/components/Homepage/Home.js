@@ -3,6 +3,7 @@ import "../../styles/Home.css";
 import Bounce from "react-reveal";
 import Lottie from "react-lottie";
 import Animazione from "./home1.json";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const defaultOptions = {
@@ -29,7 +30,11 @@ const Home = () => {
             </p>
           </div>
           <div className="home-button-container"style={{position:"relative",width:"100%", display:"flex", alignItems:"center"}}>
-            <button className="home-button-learn">Vai Alle Notizie</button>
+            <button className="home-button-learn">
+              <Link to="/news">
+                Vai Alle Notizie
+              </Link>
+              </button>
           </div>
         </div>
       </Bounce>

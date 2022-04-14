@@ -45,6 +45,9 @@
     position: relative;
     height: 40px;
     width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid white;
     margin-left: 20px;
     margin-top: 20px;
@@ -56,6 +59,12 @@
     cursor: pointer;
     background-image: linear-gradient(to right, #c667c4, #a983e3, #869bf5, #64affc, #51c0f9);
     transition: all 0.2s ease-in-out;
+}
+.home-button-learn > a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .home-button-learn:hover{
     background: transparent;

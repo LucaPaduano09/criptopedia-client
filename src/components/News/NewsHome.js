@@ -33,6 +33,9 @@ const NewsHome = () => {
         return;
       }
       const result = await response.json();
+
+      //ordino in modo descrescente l'array
+      result.sort((a, b) => a - b).reverse()
       setNews(result);
       setLoading(false);
     };
@@ -60,6 +63,11 @@ const NewsHome = () => {
                   <img src={n.image} alt="news" />
                   <div className="single-list-new-text">
                     <h1>{n.titolo}</h1>
+                    <div className="single-new-category">
+                      {n.categorie.map((el,index)=>(
+                        <p className='single-category'key={index}>{el}</p>
+                      ))}
+                    </div>
                     <h3>{n.descrizione}</h3>
                   </div>
                 </div>
