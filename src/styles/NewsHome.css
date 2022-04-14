@@ -29,13 +29,13 @@
 }
 .tipo-filter-container > button{
     position: relative;
-    width: 45%;
+    width: 33%;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: white;
     cursor: pointer;
     background-color: rgb(10, 21, 31);
@@ -233,8 +233,9 @@ a{
         justify-content: space-evenly;
     }
     .tipo-filter-container > button{
+        width: 30%;
         position: relative;
-        font-size: 13px;
+        font-size: 10px;
         margin: 0 auto;
         min-height: 30px;
     }
