@@ -34,9 +34,9 @@ const NewsHome = () => {
       }
       const result = await response.json();
       setNews(result);
+      setLoading(false);
     };
     getNews();
-    setLoading(false);
   }, [news.length]);
 
   return (
@@ -46,7 +46,7 @@ const NewsHome = () => {
           <Link>
             {loading === true ? (
               <div>
-                <p style={{ color: "white" }}>Stiamo caricando i dati</p>
+                <p style={{ color: "white" }}>Stiamo caricando le news, grazie per la pazienza</p>
                 <div>
                   <Lottie
                     style={{ height: "200px", width: "200px" }}
