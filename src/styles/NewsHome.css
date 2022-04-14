@@ -42,6 +42,7 @@
 .single-list-new > img{
     position: relative;
     width: 28%;
+    height: 130px;
 }
 .single-list-new-text{
     position: relative;

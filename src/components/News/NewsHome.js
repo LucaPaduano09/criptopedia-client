@@ -43,7 +43,7 @@ const NewsHome = () => {
     <div className="news-home-container">
       <div className="news-list-container">
         {news.map((n) => (
-          <Link>
+          <Link to={"/news/"+ n._id}>
             {loading === true ? (
               <div>
                 <p style={{ color: "white" }}>Stiamo caricando le news, grazie per la pazienza</p>

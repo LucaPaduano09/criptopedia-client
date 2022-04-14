@@ -22,12 +22,18 @@ import GuruChat from "./components/Guru/GuruChat";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import GuidaPage from "./components/Guida/GuidaPage";
 import NewsHome from "./components/News/NewsHome";
+import SingleNew from "./components/News/SingleNew";
 function App() {
   return (
     <Router>
       <div className="App">
         <ScrollToTop />
         <Switch>
+          <Route path={"/news/:id"}>
+              <Header />
+              <SingleNew />
+              <Footer />
+          </Route>
           <Route path={"/news"}>
               <Header />
               <NewsHome />
