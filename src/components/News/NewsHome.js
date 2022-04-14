@@ -44,6 +44,22 @@ const NewsHome = () => {
 
   return (
     <div className="news-home-container">
+      <div className="filter-container">
+        <div className="tipo-filter-container">
+          <button>
+            <div>Approfondimenti</div>
+          </button>
+          <button>
+            <div>
+              Notizie  
+            </div>
+          </button>
+        </div>
+        <div className="search-bar-container">
+          <input type="text" placeholder="cerca qualcosa..."/>
+          <img src="/loupe.png" alt="icona" style={{height:"25px"}}/>
+        </div>
+      </div>
       <div className="news-list-container">
         {news.map((n) => (
           <Link to={"/news/"+ n._id}>
