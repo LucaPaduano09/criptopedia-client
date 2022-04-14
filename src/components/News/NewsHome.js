@@ -76,7 +76,7 @@ const NewsHome = () => {
       <div className="filter-container">
         <div className="tipo-filter-container">
           <button onClick={() => handleApprClick(copia)}>
-            <div>Approfondimenti</div>
+            <div>Integrazioni</div>
           </button>
           <button onClick={() => handleNewsClick(copia)}>
             <div>
