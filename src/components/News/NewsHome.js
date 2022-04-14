@@ -57,7 +57,7 @@ const NewsHome = () => {
             ) : (
               <div className="single-list-wrapper">
                 <div className="single-list-new">
-                  <img src={n.image} alt="news-image" />
+                  <img src={n.image} alt="news" />
                   <div className="single-list-new-text">
                     <h1>{n.titolo}</h1>
                     <h3>{n.descrizione}</h3>
