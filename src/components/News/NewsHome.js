@@ -1,14 +1,25 @@
-import React from 'react'
-import "../../styles/NewsHome.css"
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import "../../styles/NewsHome.css";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Lottie from "react-lottie";
+import Animazione from "./loading.json";
 
 const NewsHome = () => {
-  const [news, setNews] = useState([])
-
-  useEffect(()=>{
-    const getNews = async() =>{
-      const response = await fetch("https://criptopedia.herokuapp.com/news",{
+  const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: Animazione,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  useEffect(() => {
+    const getNews = async () => {
+      setLoading(true);
+      const response = await fetch("https://criptopedia.herokuapp.com/news", {
         method: "GET",
         mode: "cors",
         cache: "no-cache",
@@ -16,39 +27,50 @@ const NewsHome = () => {
         headers: {
           "Content-Type": "application/json",
         },
-      })
-      if(!response.ok){
-        window.alert('errore nel fetching delle news');
-        return
+      });
+      if (!response.ok) {
+        window.alert("errore nel fetching delle news");
+        return;
       }
-      const result = await response.json()
+      const result = await response.json();
       setNews(result);
-    }
+    };
     getNews();
-  },[news.length])
+    setLoading(false);
+  }, [news.length]);
 
   return (
-    <div className='news-home-container'>
-      <div className='news-list-container'>
-        {
-          news.map((n)=>(
-            <Link>
-              <div className='single-list-wrapper'>
-                <div className='single-list-new'>
-                  <img src={n.image} alt="news-image"/>
-                  <div className='single-list-new-text'>
+    <div className="news-home-container">
+      <div className="news-list-container">
+        {news.map((n) => (
+          <Link>
+            {loading === true ? (
+              <div>
+                <p style={{ color: "white" }}>Stiamo caricando i dati</p>
+                <div>
+                  <Lottie
+                    style={{ height: "200px", width: "200px" }}
+                    options={defaultOptions}
+                  />
+                </div>
+              </div>
+            ) : (
+              <div className="single-list-wrapper">
+                <div className="single-list-new">
+                  <img src={n.image} alt="news-image" />
+                  <div className="single-list-new-text">
                     <h1>{n.titolo}</h1>
                     <h3>{n.descrizione}</h3>
                   </div>
                 </div>
-                <div className='separator'></div>
+                <div className="separator"></div>
               </div>
-            </Link>
-          ))
-        }
+            )}
+          </Link>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NewsHome
+export default NewsHome;

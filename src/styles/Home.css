@@ -203,6 +203,7 @@
         margin-top: 20px;
         /* background-color: rebeccapurple; */
         justify-content: space-evenly;
+        flex-direction: column-reverse;
     }
     .home-imgBackground{
         height: 32vh;

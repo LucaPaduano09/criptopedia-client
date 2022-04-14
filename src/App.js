@@ -28,6 +28,11 @@ function App() {
       <div className="App">
         <ScrollToTop />
         <Switch>
+          <Route path={"/news"}>
+              <Header />
+              <NewsHome />
+              <Footer />
+          </Route>
           <Route path={"/cryptos"}>
             <Header />
             <CryptoPage />
@@ -508,11 +513,6 @@ function App() {
           <Route path={"/cryptos-add"}>
             <Sidebar />
             <CryptoAdd />
-          </Route>
-          <Route path={"/news"}>
-            <Header />
-            <NewsHome />
-            <Footer />
           </Route>
           <Route path={"/"}>
             <Header />
