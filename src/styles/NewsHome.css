@@ -14,6 +14,7 @@
     width: 50%;
     height: 100%;
     margin-top: 50px;
+    margin-bottom: 70px;
     background: linear-gradient(90deg, rgba(10,21,31,1) 28%, rgba(9,88,121,1) 99%);
 }
 .single-list-wrapper{
