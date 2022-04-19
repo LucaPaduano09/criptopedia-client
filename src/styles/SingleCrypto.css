@@ -39,6 +39,19 @@
     padding: 20px;
     text-align: left;
 }
+.single-crypto-description p {
+    line-height: 36.5px;
+    font-size: 20px;
+}
+.single-crypto-description h5 {
+    font-size: 20px;
+}
+.single-crypto-description h2{
+    font-size: 40px;
+}
+.single-crypto-description h3{
+    font-size: 30px;
+}
  .single-crypto-link{
     position: relative;
     border: 1px solid white;

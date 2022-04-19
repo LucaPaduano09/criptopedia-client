@@ -55,7 +55,7 @@ const SingleCrypto = () => {
           </tbody>
         </table>
       </div>
-      <div className="single-crypto-description">{crypto.desc_moneta}</div>
+      <div className="single-crypto-description" dangerouslySetInnerHTML={{__html: crypto.desc_moneta}}/>
       <div style={{ width: "80vw" }}>
         <button className="single-crypto-link">
           <a target="_blank" href={crypto.link_acquisto}>
