@@ -8,12 +8,13 @@
 .single-crypto-info{
     position: relative;
     height: 100%;
-    width: 50%;
+    width: 60%;
 }
 .single-crypto-table{
     position: relative;
     height: 100%;
     width: 100%;
+    /* margin-left: -90px; */
 }
 .single-crypto-table > thead > tr > th {
     color: white;
@@ -30,7 +31,14 @@
 .single-crypto-tbody{
     height: 250px;
 }
-
+.single-crypto-name{
+    position: relative;
+    width: 60%;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+}
 .single-crypto-description{
     position: relative;
     height: 120%;
@@ -45,6 +53,14 @@
 }
 .single-crypto-description h5 {
     font-size: 20px;
+    font-style: oblique;
+}
+.single-crypto-description h6 {
+    font-size: 20px;
+    font-style: oblique;
+}
+.single-crypto-description h6::before {
+    content: ". ";
 }
 .single-crypto-description h2{
     font-size: 40px;
@@ -94,6 +110,9 @@
     }
     .single-crypto-tbody > tr > td {
         font-size: 2.6vw;
+    }
+    .single-crypto-name{
+        width: 90%;
     }
     .single-crypto-description{
         width: 90%;
