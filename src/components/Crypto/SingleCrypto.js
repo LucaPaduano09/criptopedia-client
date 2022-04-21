@@ -26,17 +26,10 @@ const SingleCrypto = () => {
   return (
     <div className="single-crypto-container">
       <div className="single-crypto-info">
+      </div>
+      <div className="single-crypto-name">
+        <h1>{crypto.nome_moneta}</h1>
         <table className="single-crypto-table">
-          <thead>
-            <tr>
-              <th>Moneta</th>
-              <th>Nome</th>
-              <th>Creatore</th>
-              <th>Anno</th>
-              <th>Massimo</th>
-              <th>Minimo</th>
-            </tr>
-          </thead>
           <tbody className="single-crypto-tbody">
             <tr>
               <td>
@@ -46,17 +39,12 @@ const SingleCrypto = () => {
                   className="crypto-table-image"
                 />
               </td>
-              <td className="single-crypto-item">{crypto.nome_moneta}</td>
+              {/* <td className="single-crypto-item">{crypto.nome_moneta}</td> */}
               <td className="single-crypto-item">{crypto.autore}</td>
               <td className="single-crypto-item">{crypto.anno}</td>
-              <td className="single-crypto-item">{crypto.massimo_moneta}€</td>
-              <td className="single-crypto-item">{crypto.minimo_moneta}€</td>
             </tr>
           </tbody>
         </table>
-      </div>
-      <div className="single-crypto-name">
-        <h1>{crypto.nome_moneta}</h1>
       </div>
       <div className="single-crypto-description" dangerouslySetInnerHTML={{__html: crypto.desc_moneta}}/>
       <div style={{ width: "80vw" }}>

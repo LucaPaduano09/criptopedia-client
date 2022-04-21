@@ -38,6 +38,17 @@
     text-transform: uppercase;
     color: white;
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.single-crypto-name h1{
+    position: relative;
+    width: 50%;
+}
+.single-crypto-name table{
+    position: relative;
+    width: 50%;
 }
 .single-crypto-description{
     position: relative;
@@ -113,6 +124,16 @@
     }
     .single-crypto-name{
         width: 90%;
+        flex-direction: column-reverse;
+    }
+    .single-crypto-name h1{
+        width: 100%;
+    }
+    .single-crypto-name table{
+        width: 100%;
+    }
+    .single-crypto-name table tbody td{
+        font-size: 20px;
     }
     .single-crypto-description{
         width: 90%;

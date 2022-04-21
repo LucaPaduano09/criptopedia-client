@@ -1,5 +1,5 @@
 .recruit-container{
-    height: 80vh;
+    /* height: 80vh; */
     width: 100vw;
     background-color: rgb(10, 21, 31);
     margin-top: 70px;
@@ -12,13 +12,13 @@
 
 .recruit-wrapper{
     position: relative;
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 50%;
     height: 100%;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
   
 .recruit-wrapper > h1{
@@ -29,7 +29,7 @@
     font-weight: 300;
     text-transform: capitalize;
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 .recruit-wrapper > p{
     position: relative;
@@ -37,6 +37,7 @@
     text-align: left;
     font-size: 20px;
     color: rgba(131, 130, 130, 0.863);
+    margin-bottom: 40px;
 }
 
 .recruit-form-container{
@@ -69,6 +70,8 @@
     height: 30px;
     width: 400px;
     margin-bottom: 20px;
+    box-sizing: content-box;
+    padding: 5px;
 }
 .recruit-form-container > div > button{
     width: 400px;
@@ -76,6 +79,16 @@
     background-image: linear-gradient(to right, #c667c4, #a983e3, #869bf5, #64affc, #51c0f9);
     border: 1px solid white;
     border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+.recruit-form-container > div > button:hover{
+    background-image: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
 }
 
 .recruit-imgBackground{
@@ -91,14 +104,26 @@
 
 @media screen and (max-width:768px) {
     .recruit-container{
-        height: 130vh;
+        /* height: 130vh; */
         margin-top: 0px;
     }
     .recruit-container > .recruit-wrapper > h1{
         font-size: 30px;
+        width: 100%;
+    }
+    .recruit-wrapper{
+        position: relative;
+        width: 90%;
     }
     .recruit-wrapper > p{
-        font-size: 10px;
+        font-size: 14px;
+        line-height: 25px;
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+    .recruit-form-container{
+        width: 100%;
     }
     .recruit-form-container > div > label{
         font-size: 15px;
@@ -108,7 +133,8 @@
         width: 200px;
     }
     .recruit-form-container > div > button{
-        height: 15px;
-        width: 200px;
+       position: relative;
+       width: 50%;
+       margin-left: 10px;
     }
 }

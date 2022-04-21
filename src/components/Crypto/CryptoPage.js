@@ -122,11 +122,17 @@ export default function ProductList() {
       <h2 className="monete-titolo">
         In questa sezione troverai tutte le crypto listate da Criptopedia
       </h2>
+      <div>
+        
+      </div>
       {isLoading ? (
         <div>
           <p style={{ color: "white" }}>Stiamo caricando i dati</p>
           <div>
-            <Lottie style={{height:"200px",width:"200px"}} options={defaultOptions} />
+            <Lottie
+              style={{ height: "200px", width: "200px" }}
+              options={defaultOptions}
+            />
           </div>
         </div>
       ) : (
@@ -134,7 +140,9 @@ export default function ProductList() {
       )}
 
       <div className="filter-container">
-        <button onClick={handleClick} style={{marginLeft:"10px"}}>1</button>
+        <button onClick={handleClick} style={{ marginLeft: "10px" }}>
+          1
+        </button>
         <button onClick={handleClick2}>2</button>
       </div>
     </div>

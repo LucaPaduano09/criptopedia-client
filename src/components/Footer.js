@@ -28,8 +28,7 @@ const Footer = () => {
         <div className="footer-contatti-container">
           <h1>Lavora con noi</h1>
           <p>
-            Hai una buona preparazione sul mondo crypto? inviaci un curriculum
-            ed entra a far parte del team
+            Sei un artista NFT? Compila il nostro Form { <br></br>} ed entra a far parte del team
           </p>
           <Link to={"/lavora-con-noi"}>
             <div
@@ -39,7 +38,7 @@ const Footer = () => {
                 justifyContent: "center",
               }}
             >
-              <button className="footer-invia-button">invia la candidatura</button>
+              <button className="footer-invia-button">Compila il Form</button>
             </div>
           </Link>
         </div>
