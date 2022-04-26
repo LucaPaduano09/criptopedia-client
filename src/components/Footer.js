@@ -20,7 +20,7 @@ const Footer = () => {
       <Swing>
         <div className="footer-contatti-container">
           <h1>Contattaci</h1>
-          <a href="mailto:lucapaduano09@outlook.it">lucapaduano09@outlook.it</a>
+          <a href="mailto:criptopedia2021@gmail.com">criptopedia2021@gmail.com</a>
           <a href="tel:3426137684">+39 3426137684</a>
         </div>
       </Swing>

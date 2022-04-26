@@ -28,9 +28,21 @@ const Header = () => {
         </Link> */}
       </div>
       <div className="header-social">
-        <img src="/facebook.png" alt="social-icon" />
-        <img src="/instagram.png" alt="social-icon" />
-        <img src="/twitter.png" alt="social-icon" />
+        <a
+          href="https://www.facebook.com/profile.php?id=100079900074435"
+          target={"_blank"}
+        >
+          <img src="/facebook.png" alt="social-icon" />
+        </a>
+        <a
+          href="https://instagram.com/criptopedia._?r=nametag"
+          target={"_blank"}
+        >
+          <img src="/instagram.png" alt="social-icon" />
+        </a>
+        <a href="https://mobile.twitter.com/PediaCripto" target={"_blank"}>
+          <img src="/twitter.png" alt="social-icon" />
+        </a>
         <Link to={"/admin"}>
           <img
             className="user-social"
@@ -73,6 +85,26 @@ const Header = () => {
             <h1 id="hamb-menu-link" data-text="&nbsp;Nft&nbsp;">
               &nbsp;NFT&nbsp;
             </h1>
+            <div className="hamb-menu-social">
+              <a
+                target={"_blank"}
+                href="https://mobile.twitter.com/PediaCripto"
+              >
+                <img src="/twitter.png" />
+              </a>
+              <a
+                target={"_blank"}
+                href="https://instagram.com/criptopedia._?r=nametag"
+              >
+                <img src="/instagram.png" />
+              </a>
+              <a
+                target={"_blank"}
+                href="https://www.facebook.com/profile.php?id=100079900074435"
+              >
+                <img src="/facebook.png" />
+              </a>
+            </div>
             {console.log("aperto")}
           </div>
         </Slide>
