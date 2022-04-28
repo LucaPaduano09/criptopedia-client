@@ -24,6 +24,10 @@
     #64affc,
     #51c0f9
   );
+  transition: all 0.2s ease-in-out;
+}
+.cryptopage-container:hover{
+  opacity: 60%;
 }
 .inner-wrapper {
   position: absolute;

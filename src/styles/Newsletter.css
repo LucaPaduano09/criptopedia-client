@@ -10,9 +10,12 @@
 }
 .newsletter-info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  margin-left: 100px;
+  position: relative;
+  width: 50%;
 }
 .newsletter-title {
   font-size: 75px;
@@ -72,7 +75,7 @@
 
 .newsletter-imgContainer {
   width: 50vw;
-  height: 80vh;
+  /* height: 80vh; */
   margin-right: 50px;
 }
 

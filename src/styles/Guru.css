@@ -54,7 +54,7 @@
 .guru-imgBackground{
     position: relative;
     width: 35%;
-    height: 85%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,9 @@
     background-position: center center;
     background-size: contain; */
 }
-
+.lng{
+    display: flex;
+}
 @media screen and (max-width:768px) {
     .guru-container{
         align-items: center;
@@ -150,7 +152,6 @@
         margin-bottom: 50px;
         width: 80vw;
         display: flex;
-        justify-content: center;
     }
     .guru-button{
         height: 30px;
