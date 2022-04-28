@@ -152,7 +152,7 @@
 }
 
 /* Mobile L */
-@media screen and (max-width:425px){
+@media screen and (max-width:428px){
   .newsletter-container{
     height: 80vh;
     margin-top: 0px;
@@ -162,6 +162,7 @@
     width: 60vw;
   }
   .newsletter-info{
+    margin-left: 0px;
   }
   .newsletter-form-container > input{
     height: 30px;
