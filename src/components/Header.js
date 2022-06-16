@@ -23,6 +23,9 @@ const Header = () => {
         <Link to="/guida">
           <li className="header-menu-option">Guida</li>
         </Link>
+        <Link to="/">
+          <li className="header-menu-option">Corso</li>
+        </Link>
         {/* <Link to={"/"}>
           <li className="header-menu-option">NFT</li>
         </Link> */}
@@ -82,8 +85,8 @@ const Header = () => {
                 &nbsp;Cryptos&nbsp;
               </h1>
             </Link>
-            <h1 id="hamb-menu-link" data-text="&nbsp;Nft&nbsp;">
-              &nbsp;NFT&nbsp;
+            <h1 id="hamb-menu-link" data-text="&nbsp;Corso&nbsp;">
+              &nbsp;Corso&nbsp;
             </h1>
             <div className="hamb-menu-social">
               <a

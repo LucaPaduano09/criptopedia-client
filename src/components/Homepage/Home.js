@@ -13,6 +13,7 @@ const Home = () => {
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
+    
   };
   return (
     <div className="home-container">

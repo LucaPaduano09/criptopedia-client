@@ -68,7 +68,7 @@
 }
 .header-menu > a:hover {
   /* opacity: 75%; */
-  color: #51c0f9;
+  color: rgb(180, 202, 218);
 }
 
 .header-social {

@@ -54,7 +54,6 @@ export default function ProductList() {
         {
           method: "GET",
           mode: "cors",
-          cache: "no-cache",
           credentials: "same-origin",
           headers: {
             "Content-Type": "application/json",

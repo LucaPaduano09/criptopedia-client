@@ -23,6 +23,7 @@ import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import GuidaPage from "./components/Guida/GuidaPage";
 import NewsHome from "./components/News/NewsHome";
 import SingleNew from "./components/News/SingleNew";
+import Parallax from "./components/Parallax";
 function App() {
   return (
     <Router>
@@ -526,7 +527,7 @@ function App() {
             <Crypto />
             <Guru />
             <Newsletter />
-            <Footer />
+            <Footer /> 
           </Route>
         </Switch>
       </div>

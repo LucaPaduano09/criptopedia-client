@@ -9,7 +9,7 @@ const Guida = (props) => {
   return (
     <div className="guida-container">
       <div className="guida-wrapper">
-          <div className="guida-articolo-container"style={{backgroundImage:`url("../../public/capitolo1.jpg")`}}>
+          <div className="guida-articolo-container">
             <Link to={"/come-iniziare"}>
               Come Iniziare
             </Link>
