@@ -138,6 +138,9 @@
     .single-crypto-description{
         width: 90%;
     }
+    .single-crypto-description h2 {
+        text-transform: uppercase;
+    }
     .single-crypto-link{
         position: relative;
         width: 80%;
